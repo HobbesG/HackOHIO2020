@@ -25,7 +25,7 @@ function style(feature) {
     };
 }
 function mapZoom(){
-    if(map.getZoom() > 7){
+    if(map.getZoom() > 6){
         return counties
     }
     else{
