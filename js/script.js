@@ -65,7 +65,7 @@ info.update = function (property) {
     }
     else{
         this._div.innerHTML = '<h4>Information</h4>' +  (property ?
-            '<b>State:'+ property.name + '</b> <br />'
+            '<b>State:'+ property.NAME + '</b> <br />'
             : 'Hover over a state');
     }
 };
@@ -108,9 +108,9 @@ function zoomToFeature(e) {
 
 
 function onEachFeature(feature, layer){
-    if(feature.properties && feature.properties.NAME){
-        layer.bindPopup(feature.properties.NAME, {closeOnClick: false, autoClose: false});
-    }
+    // if(feature.properties && feature.properties.NAME){
+    //     layer.bindPopup(feature.properties.NAME, {closeOnClick: false, autoClose: false});
+    // }
 
     layer.on({
         mouseover: highlightFeature,
