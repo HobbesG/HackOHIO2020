@@ -39,19 +39,24 @@ map.removeLayer(geoJSON);
     
 function getColor(d) {
     for(var c in ohCrime2018.countiesName){
-
-        if(d == ohCrime2018.countiesName[c].county){
-        var stat = ohCrime2018.countiesName[c].crime.motorVehicleTheft
         
+        if(d == ohCrime2018.countiesName[c].county){
+            var crime = ohCrime2018.countiesName[c].crime
+            var motorTheft = crime.motorVehicleTheft
+            var robbery = crime.robbery
+            var burglary = crime.burglary
+            var larceny = crime.larceny
+            var stat = (motorTheft + robbery + burglary + larceny)/4
+            
         }
     }
 
     var color;
-    if(stat >25){
+    if(stat >100){
         color = 'red';
     }
     else if(stat == undefined){
-        color = 'black';
+        color = 'white`';
     }
     else{
         color = 'blue';
@@ -114,9 +119,9 @@ function zoomToFeature(e) {
 }
 
 function onEachFeature(feature, layer){
-    if(feature.properties && feature.properties.NAME){
-        layer.bindPopup(feature.properties.NAME, {closeOnClick: false, autoClose: false});
-    }
+    //if(feature.properties && feature.properties.NAME){
+    //    layer.bindPopup(feature.properties.NAME, {closeOnClick: false, autoClose: false});
+    //}
 
     layer.on({
         mouseover: highlightFeature,
@@ -145,5 +150,6 @@ map.on('zoomend', function(e){
     }).addTo(map);
 
 });
+
  
 }
