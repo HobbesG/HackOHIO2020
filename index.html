@@ -1,30 +1,105 @@
 <html>
-	<head>
-		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-		crossorigin=""/>
-	 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-		crossorigin=""></script>
-		<script src="js/script.js"></script>
-<style>
-	#mapid { margin: auto; height: 90%;width: 100%;}
-</style>
-	 
-
-		<title>Space Team</title>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
 		<link href="https://fonts.googleapis.com/css?family=Encode Sans Semi Condensed" rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/bulma.css">
+		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+		<script src="js/script.js"></script>
+        <style>
+            #mapid { margin: auto; height: 60%; width: 95%; }
+        </style>
+        <title>Space Team</title>	
 	</head>
 	<body>
-		<center>
-			<h1>Space Team</h1>
+        <!-- NAVIGATION BAR -->
+        <center>
+            <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="https://hack.osu.edu/2020">
+                        <img src="img\hack-logo.svg" width="50" height="28">
+                    </a>
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                <a class="navbar-item" href="index.html">
+                    Home
+                </a>
+
+                <a class="navbar-item" href="https://github.com/HobbesG/HackOHIO2020">
+                    Source
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                    More
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            About
+                        </a>
+                        <a class="navbar-item">
+                            Jobs
+                        </a>
+                        <a class="navbar-item">
+                            Contact
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                        Report an issue
+                        </a>
+                    </div>
+                </div>
+                </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <button class="button">
+    <span class="icon">
+      <i class="fab fa-github"></i>
+    </span>
+    <span>GitHub</span>
+  </button>
+      </div>
+    </div>
+  </div>
+</nav>
+            <!-- MAP -->
 		</center>
+		<section class="section">
+		<div class="container">
+            <div class="box">
 		<div id="mapid"></div>
+                </div>
 		<script src="js\counties5m.js"></script>
 		<script src="js\states5m.js"></script>
 		<script>script();</script>
+		</div>
+		</section>
+        
+        <!-- SELECTION -->
+        
+        
 		
-
+		
+		
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Space Team</strong> @ HackOHI/O 2020: <a href="https://github.com/ZachBoyce1">Zach Boyce</a>, <a href="https://github.com/jonathonbrady">Jonathon Brady</a>, <a href="https://github.com/HobbesG">Calvin Gunawan</a>, <a href="https://github.com/lukeshotgun">Luke Wingert</a><br>The source code is licensed
+      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+      is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+    </p>
+  </div>
+</footer>
 	</body>
 </html>
