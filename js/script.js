@@ -41,29 +41,15 @@ function getColor(d) {
     for(var c in ohCrime2018.countiesName){
         
         if(d == ohCrime2018.countiesName[c].county){
-            var crime = ohCrime2018.countiesName[c].crime
-            var motorTheft = crime.motorVehicleTheft
-            var robbery = crime.robbery
-            var burglary = crime.burglary
-            var larceny = crime.larceny
-            var stat = (motorTheft + robbery + burglary + larceny)/4
-            
+
+            var motorTheft = ohCrime2018.countiesName[c].crime.motorVehicleTheft
+            var propertyCrime = ohCrime2018.countiesName[c].crime.propertyCrime
+            var robbery = ohCrime2018.countiesName[c].crime.robbery
+            var burglary = ohCrime2018.countiesName[c].crime.burglary
+            var larceny = ohCrime2018.countiesName[c].crime.larcenyTheft
+            var stat = (motorTheft + robbery + burglary + larceny + propertyCrime)/50
         }
     }
-
-<<<<<<< HEAD
-    var color;
-    if(stat >100){
-        color = 'red';
-    }
-    else if(stat == undefined){
-        color = 'white`';
-    }
-    else{
-        color = 'blue';
-    }
-    return color;
-=======
     return stat > 60  ? '#FF4C48' :
         stat > 50  ? '#FFA25C' :
         stat > 40  ? '#FAA855' :
@@ -71,7 +57,6 @@ function getColor(d) {
         stat > 20   ? '#D2E164' :
         stat > 10   ? '#5EA62F' :
                       'white';
->>>>>>> b1e43ab169ceda5bc6e101ba8aaf9f509869a099
 }
 
 var info = L.control();
@@ -89,7 +74,7 @@ info.update = function (property) {
     this._div.innerHTML = '<h4>Information</h4>' +  (property ?
         '<b>State:'+ property.STATE + '</b> <br />'+
         '<b> County: ' + property.NAME + '</b><br />' 
-        : 'Hover over a state');
+        : 'Hover over a county');
     }
     else{
         this._div.innerHTML = '<h4>Information</h4>' +  (property ?
