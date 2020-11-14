@@ -25,7 +25,7 @@ function style(feature) {
     };
 }
 function mapZoom(){
-    if(map.getZoom() > 7){
+    if(map.getZoom() > 6){
         return counties
     }
     else{
@@ -51,6 +51,7 @@ function getColor(d) {
         }
     }
 
+<<<<<<< HEAD
     var color;
     if(stat >100){
         color = 'red';
@@ -62,6 +63,15 @@ function getColor(d) {
         color = 'blue';
     }
     return color;
+=======
+    return stat > 60  ? '#FF4C48' :
+        stat > 50  ? '#FFA25C' :
+        stat > 40  ? '#FAA855' :
+        stat > 30   ? '#FFFF85' :
+        stat > 20   ? '#D2E164' :
+        stat > 10   ? '#5EA62F' :
+                      'white';
+>>>>>>> b1e43ab169ceda5bc6e101ba8aaf9f509869a099
 }
 
 var info = L.control();
