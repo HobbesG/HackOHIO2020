@@ -1,5 +1,25 @@
 <html>
     <head>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+  $("#showModal").click(function() {
+  $(".modal").addClass("is-active");
+      $('#mapid').css("visibility", "hidden");
+  });
+
+$("#modal-close").click(function() {
+   $(".modal").removeClass("is-active");
+    $('#mapid').css("visibility", "visible");
+});
+                var dropdown = document.querySelector('.dropdown');
+dropdown.addEventListener('click', function(event) {
+  event.stopPropagation();
+  dropdown.classList.toggle('is-active');
+});
+});
+
+        </script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
 		<link href="https://fonts.googleapis.com/css?family=Encode Sans Semi Condensed" rel="stylesheet">
@@ -8,6 +28,7 @@
 		<link rel="stylesheet" href="css/bulma.css">
 		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 		<script src="js/script.js"></script>
+        
         <style>
             #mapid { margin: auto; height: 60%; width: 95%; }
         </style>
@@ -73,15 +94,48 @@
                     </div>
                 </div>
             </nav>
-            <!-- MAP -->
+            
+            <!-- MAP BOX -->
             <section class="section">
                 <div class="container">
                     <div class="box">
                         <div id="mapid"></div>
                         <center>
+                            <!-- BUTTONS -->
+                            <br>
                             <button class="button is-info is-light">How to Use</button>
                             <button class="button is-success is-light">Add Location</button>
-                            <button class="button is-warning is-light">Your Preferences</button>
+                            <button class="button is-warning is-light" id="showModal">Your Preferences</button>
+                            <div class="dropdown">
+  <div class="dropdown-trigger">
+    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+      <span>Highlight Counties</span>
+      <span class="icon is-small">
+        <i class="fas fa-angle-down" aria-hidden="true"></i>
+      </span>
+    </button>
+  </div>
+  <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+    <div class="dropdown-content">
+      <a href="#" class="dropdown-item">
+        Crime Rate
+      </a>
+      <a href="#" class="dropdown-item">
+        Population Density
+      </a>
+      <a href="#" class="dropdown-item">
+        Average Temperature
+      </a>
+      <a href="#" class="dropdown-item">
+        Voting History
+      </a>
+      <hr class="dropdown-divider">
+      <a href="#" class="dropdown-item">
+        Disable Color Key
+      </a>
+    </div>
+  </div>
+</div>
                         </center>
                     </div>
                 </div>
@@ -92,6 +146,86 @@
             <script src="js\ohio_crime_data_2018.js"></script>
             <script>script();</script>
             
+            <div class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Your Preferences</p>
+                    </header>
+                    <section class="modal-card-body">
+                        <p class="title is-4">What's important?</p>
+                        <p class="subtitle is-6">Help us make a better choice for you and your property<br>
+                            Rate the following concerns to let us know what matters the most<br><br>
+                            A rating of <b>1</b> means the issue is of <span class="tag is-success is-light">Low Concern</span> to you<br>
+                            A rating of <b>5</b> means the issue is of <span class="tag is-danger is-light">High Concern</span> to you<br><br>
+                        <table class="table is-hoverable">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th align="center"><p class="heading"><span class="tag is-success is-light">1</span></th>
+                                    <th align="center"><p class="heading"><span class="tag is-light">2</span></th>
+                                    <th align="center"><p class="heading"><span class="tag is-warning is-light">3</span></th>
+                                    <th align="center"><p class="heading"><span class="tag is-light">4</span></th>
+                                    <th align="center"><p class="heading"><span class="tag is-danger is-light">5</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td align="center"><p class="heading">Crime Rate</p></td>
+                                    <td align="center"><input type="radio" name="crime" value="1"></td>
+                                    <td align="center"><input type="radio" name="crime" value="2"></td>
+                                    <td align="center"><input type="radio" name="crime" value="3"></td>
+                                    <td align="center"><input type="radio" name="crime" value="4"></td>
+                                    <td align="center"><input type="radio" name="crime" value="5"></td>
+                                </tr>
+                                <tr>
+                                    <td align="center"><p class="heading">Climate Security</p></td>
+                                    <td align="center"><input type="radio" name="climate" value="1"></td>
+                                    <td align="center"><input type="radio" name="climate" value="2"></td>
+                                    <td align="center"><input type="radio" name="climate" value="3"></td>
+                                    <td align="center"><input type="radio" name="climate" value="4"></td>
+                                    <td align="center"><input type="radio" name="climate" value="5"></td>
+                                </tr>
+                                <tr>
+                                    <td align="center"><p class="heading">Severe Weather</p></td>
+                                    <td align="center"><input type="radio" name="weather" value="1"></td>
+                                    <td align="center"><input type="radio" name="weather" value="2"></td>
+                                    <td align="center"><input type="radio" name="weather" value="3"></td>
+                                    <td align="center"><input type="radio" name="weather" value="4"></td>
+                                    <td align="center"><input type="radio" name="weather" value="5"></td>
+                                </tr>
+                                <tr>
+                                    <td align="center"><p class="heading">Property Value</p></td>
+                                    <td align="center"><input type="radio" name="property" value="1"></td>
+                                    <td align="center"><input type="radio" name="property" value="2"></td>
+                                    <td align="center"><input type="radio" name="property" value="3"></td>
+                                    <td align="center"><input type="radio" name="property" value="4"></td>
+                                    <td align="center"><input type="radio" name="property" value="5"></td>
+                                </tr>
+                                <tr>
+                                    <td align="center"><p class="heading">Tax Rate</p></td>
+                                    <td align="center"><input type="radio" name="tax" value="1"></td>
+                                    <td align="center"><input type="radio" name="tax" value="2"></td>
+                                    <td align="center"><input type="radio" name="tax" value="3"></td>
+                                    <td align="center"><input type="radio" name="tax" value="4"></td>
+                                    <td align="center"><input type="radio" name="tax" value="5"></td>
+                                </tr>
+                                <tr>
+                                    <td align="center"><p class="heading">Public Education</td>
+                                    <td align="center"><input type="radio" name="education" value="1"></td>
+                                    <td align="center"><input type="radio" name="education" value="2"></td>
+                                    <td align="center"><input type="radio" name="education" value="3"></td>
+                                    <td align="center"><input type="radio" name="education" value="4"></td>
+                                    <td align="center"><input type="radio" name="education" value="5"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <footer class="modal-card-foot">
+                    <button class="button is-success" id="modal-close">Save</button>
+                    </footer>
+                </div>
+            </div>
             <section class="section">
                 <div class="container">
                     <div class="box">
