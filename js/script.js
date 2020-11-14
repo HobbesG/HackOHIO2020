@@ -25,7 +25,7 @@ function style(feature) {
     };
 }
 function mapZoom(){
-    if(map.getZoom() > 6){
+    if(map.getZoom() > 7){
         return counties
     }
     else{
@@ -71,13 +71,7 @@ info.update = function (property) {
     }
 };
 
-
-
 info.addTo(map);
-
-
-
-
 
 function highlightFeature(e) {
     var layer = e.target;
@@ -107,11 +101,10 @@ function zoomToFeature(e) {
     map.fitBounds(e.target.getBounds());
 }
 
-
 function onEachFeature(feature, layer){
-    // if(feature.properties && feature.properties.NAME){
-    //     layer.bindPopup(feature.properties.NAME, {closeOnClick: false, autoClose: false});
-    // }
+    if(feature.properties && feature.properties.NAME){
+        layer.bindPopup(feature.properties.NAME, {closeOnClick: false, autoClose: false});
+    }
 
     layer.on({
         mouseover: highlightFeature,
@@ -121,7 +114,6 @@ function onEachFeature(feature, layer){
 
     
 }
-
 
 var initialGeoJSON = L.geoJSON(mapZoom(), {
     style: style,
@@ -141,11 +133,5 @@ map.on('zoomend', function(e){
     }).addTo(map);
 
 });
-
-
-
-
-
-    
-  
+ 
 }

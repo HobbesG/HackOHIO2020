@@ -1,9 +1,8 @@
 var ohCrime2018 = {
     "type": "FeaturesCollection",
-    "features":
-[
+    "counties":[
     {
-      "county": 'Allen',
+      "county": 'Allen',"crime": {
       "murderAndNonnegligentManslaughter": 1,
       "robbery": 15,
       "aggravatedAssault": 9,
@@ -11,11 +10,11 @@ var ohCrime2018 = {
       "burglary": 139,
       "burglary": 637,
       "motorVehicleTheft": 27,
-      "arson": 2
+      "arson": 2}
     },
     {
-      "county": 'Belmont',
-      "violentCrime": 52,
+      "county": 'Belmont', "crime": { 
+      "violentCrime" : 52,
       "murderAndNonnegligentManslaughter": 2,
       "rape": 19,
       "robbery": 3,
@@ -24,11 +23,11 @@ var ohCrime2018 = {
       "burglary": 41,
       "burglary": 165,
       "motorVehicleTheft": 11,
-      "arson": 2
+      "arson": 2}
     },
     {
-      "county": 'Clark',
-      "violentCrime": 38,
+      "county": 'Clark', "crime": { 
+      "violentCrime" : 38,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 4,
       "robbery": 9,
@@ -37,11 +36,11 @@ var ohCrime2018 = {
       "burglary": 148,
       "burglary": 470,
       "motorVehicleTheft": 12,
-      "arson": 1
+      "arson": 1}
     },
     {
-      "county": 'Clermont',
-      "violentCrime": 103,
+      "county": 'Clermont', "crime": { 
+      "violentCrime" : 103,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 25,
       "robbery": 8,
@@ -50,11 +49,11 @@ var ohCrime2018 = {
       "burglary": 214,
       "burglary": 671,
       "motorVehicleTheft": 63,
-      "arson": 2
+      "arson": 2}
     },
     {
-      "county": 'Delaware',
-      "violentCrime": 60,
+      "county": 'Delaware', "crime": { 
+      "violentCrime" : 60,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 25,
       "robbery": 6,
@@ -63,11 +62,11 @@ var ohCrime2018 = {
       "burglary": 174,
       "burglary": 884,
       "motorVehicleTheft": 38,
-      "arson": 1
+      "arson": 1}
     },
     {
-      "county": 'Fairfield',
-      "violentCrime": 46,
+      "county": 'Fairfield', "crime": { 
+      "violentCrime" : 46,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 13,
       "robbery": 6,
@@ -76,11 +75,11 @@ var ohCrime2018 = {
       "burglary": 149,
       "burglary": 881,
       "motorVehicleTheft": 41,
-      "arson": 3
+      "arson": 3}
     },
     {
-      "county": 'Fulton',
-      "violentCrime": 15,
+      "county": 'Fulton', "crime": { 
+      "violentCrime" : 15,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 4,
       "robbery": 3,
@@ -89,11 +88,11 @@ var ohCrime2018 = {
       "burglary": 59,
       "burglary": 163,
       "motorVehicleTheft": 0,
-      "arson": 0
+      "arson": 0}
     },
     {
-      "county": 'Geauga',
-      "violentCrime": 21,
+      "county": 'Geauga',"crime": {
+      "violentCrime" : 21,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 3,
       "robbery": 1,
@@ -102,11 +101,11 @@ var ohCrime2018 = {
       "burglary": 23,
       "burglary": 91,
       "motorVehicleTheft": 3,
-      "arson": 2
+      "arson": 2}
     },
     {
-      "county": 'Greene',
-      "violentCrime": 43,
+      "county": 'Greene',"crime": {
+      "violentCrime" : 43,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 10,
       "robbery": 2,
@@ -115,11 +114,11 @@ var ohCrime2018 = {
       "burglary": 60,
       "burglary": 230,
       "motorVehicleTheft": 16,
-      "arson": 1
+      "arson": 1}
     },
     {
-      "county": 'Hamilton',
-      "violentCrime": 168,
+      "county": 'Hamilton',"crime": {
+      "violentCrime" : 168,
       "murderAndNonnegligentManslaughter": 3,
       "rape": 50,
       "robbery": 31,
@@ -128,11 +127,11 @@ var ohCrime2018 = {
       "burglary": 232,
       "burglary": 1535,
       "motorVehicleTheft": 166,
-      "arson": 14
+      "arson": 14}
     },
     {
-      "county": 'Hocking',
-      "violentCrime": 19,
+      "county": 'Hocking',"crime": {
+      "violentCrime" : 19,
       "murderAndNonnegligentManslaughter": 4,
       "rape": 2,
       "robbery": 1,
@@ -141,11 +140,11 @@ var ohCrime2018 = {
       "burglary": 112,
       "burglary": 246,
       "motorVehicleTheft": 137,
-      "arson": 3
+      "arson": 3}
     },
     {
-      "county": 'Jefferson',
-      "violentCrime": 12,
+      "county": 'Jefferson',"crime": {
+      "violentCrime" : 12,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 1,
       "robbery": 0,
@@ -154,10 +153,10 @@ var ohCrime2018 = {
       "burglary": 25,
       "burglary": 43,
       "motorVehicleTheft": 7,
-      "arson": 1
+      "arson": 1}
     },
     {
-      "county": 'Lake',
+      "county": 'Lake', "crime": {
       "murderAndNonnegligentManslaughter": 3,
       "robbery": 5,
       "aggravatedAssault": 182,
@@ -165,11 +164,11 @@ var ohCrime2018 = {
       "burglary": 82,
       "burglary": 218,
       "motorVehicleTheft": 5,
-      "arson": 0
+      "arson": 0}
     },
     {
-      "county": 'Lawrence',
-      "violentCrime": 56,
+      "county": 'Lawrence',"crime": {
+      "violentCrime" : 56,
       "murderAndNonnegligentManslaughter": 1,
       "rape": 13,
       "robbery": 4,
@@ -178,11 +177,11 @@ var ohCrime2018 = {
       "burglary": 145,
       "burglary": 315,
       "motorVehicleTheft": 50,
-      "arson": 2
+      "arson": 2}
     },
     {
-      "county": 'Lorain',
-      "violentCrime": 76,
+      "county": 'Lorain',"crime": {
+      "violentCrime" : 76,
       "murderAndNonnegligentManslaughter": 2,
       "rape": 18,
       "robbery": 12,
@@ -191,11 +190,11 @@ var ohCrime2018 = {
       "burglary": 164,
       "burglary": 274,
       "motorVehicleTheft": 22,
-      "arson": 5
+      "arson": 5}
     },
     {
-      "county": 'Lucas',
-      "violentCrime": 104,
+      "county": 'Lucas',"crime": {
+      "violentCrime" : 104,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 31,
       "robbery": 30,
@@ -204,11 +203,11 @@ var ohCrime2018 = {
       "burglary": 155,
       "burglary": 729,
       "motorVehicleTheft": 66,
-      "arson": 4
+      "arson": 4}
     },
     {
-      "county": 'Madison',
-      "violentCrime": 13,
+      "county": 'Madison',"crime": {
+      "violentCrime" : 13,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 1,
       "robbery": 4,
@@ -217,11 +216,11 @@ var ohCrime2018 = {
       "burglary": 83,
       "burglary": 234,
       "motorVehicleTheft": 17,
-      "arson": 2
+      "arson": 2}
     },
     {
-      "county": 'Mahoning',
-      "violentCrime": 4,
+      "county": 'Mahoning',"crime": {
+      "violentCrime" : 4,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 1,
       "robbery": 1,
@@ -230,11 +229,11 @@ var ohCrime2018 = {
       "burglary": 5,
       "burglary": 72,
       "motorVehicleTheft": 4,
-      "arson": 0
+      "arson": 0}
     },
     {
-      "county": 'Medina',
-      "violentCrime": 5,
+      "county": 'Medina',"crime": {
+      "violentCrime" : 5,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 0,
       "robbery": 1,
@@ -243,11 +242,11 @@ var ohCrime2018 = {
       "burglary": 23,
       "burglary": 63,
       "motorVehicleTheft": 0,
-      "arson": 0
+      "arson": 0}
     },
     {
-      "county": 'Miami',
-      "violentCrime": 35,
+      "county": 'Miami',"crime": {
+      "violentCrime" : 35,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 11,
       "robbery": 0,
@@ -256,11 +255,11 @@ var ohCrime2018 = {
       "burglary": 78,
       "burglary": 212,
       "motorVehicleTheft": 31,
-      "arson": 8
+      "arson": 8}
     },
     {
-      "county": 'Montgomery',
-      "violentCrime": 269,
+      "county": 'Montgomery',"crime": {
+      "violentCrime" : 269,
       "murderAndNonnegligentManslaughter": 7,
       "rape": 42,
       "robbery": 67,
@@ -269,11 +268,11 @@ var ohCrime2018 = {
       "burglary": 282,
       "burglary": 663,
       "motorVehicleTheft": 321,
-      "arson": 9
+      "arson": 9}
     },
     {
-      "county": 'Perry',
-      "violentCrime": 6,
+      "county": 'Perry',"crime": {
+      "violentCrime" : 6,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 2,
       "robbery": 0,
@@ -282,11 +281,11 @@ var ohCrime2018 = {
       "burglary": 32,
       "burglary": 50,
       "motorVehicleTheft": 3,
-      "arson": 0
+      "arson": 0}
     },
     {
-      "county": 'Pickaway',
-      "violentCrime": 31,
+      "county": 'Pickaway',"crime": {
+      "violentCrime" : 31,
       "murderAndNonnegligentManslaughter": 1,
       "rape": 9,
       "robbery": 2,
@@ -295,10 +294,10 @@ var ohCrime2018 = {
       "burglary": 145,
       "burglary": 443,
       "motorVehicleTheft": 31,
-      "arson": 4
+      "arson": 4}
     },
     {
-      "county": 'Portage',
+      "county": 'Portage', "crime": {
       "murderAndNonnegligentManslaughter": 1,
       "robbery": 13,
       "aggravatedAssault": 337,
@@ -306,11 +305,11 @@ var ohCrime2018 = {
       "burglary": 217,
       "burglary": 731,
       "motorVehicleTheft": 43,
-      "arson": 3
+      "arson": 3}
     },
     {
-      "county": 'Richland',
-      "violentCrime": 65,
+      "county": 'Richland',"crime": {
+      "violentCrime" : 65,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 35,
       "robbery": 9,
@@ -319,11 +318,11 @@ var ohCrime2018 = {
       "burglary": 185,
       "burglary": 507,
       "motorVehicleTheft": 56,
-      "arson": 4
+      "arson": 4}
     },
     {
-      "county": 'Stark',
-      "violentCrime": 116,
+      "county": 'Stark',"crime": {
+      "violentCrime" : 116,
       "murderAndNonnegligentManslaughter": 1,
       "rape": 32,
       "robbery": 26,
@@ -332,11 +331,11 @@ var ohCrime2018 = {
       "burglary": 422,
       "burglary": 1057,
       "motorVehicleTheft": 99,
-      "arson": 11
+      "arson": 11}
     },
     {
-      "county": 'Summit',
-      "violentCrime": 70,
+      "county": 'Summit',"crime": {
+      "violentCrime" : 70,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 26,
       "robbery": 12,
@@ -345,11 +344,11 @@ var ohCrime2018 = {
       "burglary": 129,
       "burglary": 712,
       "motorVehicleTheft": 48,
-      "arson": 3
+      "arson": 3}
     },
     {
-      "county": 'Trumbull',
-      "violentCrime": 17,
+      "county": 'Trumbull',"crime": {
+      "violentCrime" : 17,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 4,
       "robbery": 2,
@@ -358,11 +357,11 @@ var ohCrime2018 = {
       "burglary": 76,
       "burglary": 119,
       "motorVehicleTheft": 6,
-      "arson": 0
+      "arson": 0}
     },
     {
-      "county": 'Union',
-      "violentCrime": 39,
+      "county": 'Union',"crime": {
+      "violentCrime" : 39,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 21,
       "robbery": 1,
@@ -371,11 +370,11 @@ var ohCrime2018 = {
       "burglary": 33,
       "burglary": 133,
       "motorVehicleTheft": 15,
-      "arson": 0
+      "arson": 0}
     },
     {
-      "county": 'Warren',
-      "violentCrime": 51,
+      "county": 'Warren',"crime": {
+      "violentCrime" : 51,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 10,
       "robbery": 4,
@@ -384,11 +383,11 @@ var ohCrime2018 = {
       "burglary": 96,
       "burglary": 586,
       "motorVehicleTheft": 59,
-      "arson": 1
+      "arson": 1}
     },
     {
-      "county": 'Wood',
-      "violentCrime": 25,
+      "county": 'Wood',"crime": {
+      "violentCrime" : 25,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 9,
       "robbery": 2,
@@ -397,11 +396,11 @@ var ohCrime2018 = {
       "burglary": 86,
       "burglary": 261,
       "motorVehicleTheft": 15,
-      "arson": 2
+      "arson": 2}
     },
     {
-      "county": 'Adams',
-      "violentCrime": 11,
+      "county": 'Adams',"crime": {
+      "violentCrime" : 11,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 5,
       "robbery": 0,
@@ -410,11 +409,11 @@ var ohCrime2018 = {
       "burglary": 79,
       "burglary": 100,
       "motorVehicleTheft": 17,
-      "arson": 2
+      "arson": 2}
     },
     {
-      "county": 'Ashland',
-      "violentCrime": 18,
+      "county": 'Ashland',"crime": {
+      "violentCrime" : 18,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 13,
       "robbery": 0,
@@ -423,11 +422,11 @@ var ohCrime2018 = {
       "burglary": 47,
       "burglary": 93,
       "motorVehicleTheft": 4,
-      "arson": 3
+      "arson": 3}
     },
     {
-      "county": 'Ashtabula',
-      "violentCrime": 45,
+      "county": 'Ashtabula',"crime": {
+      "violentCrime" : 45,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 6,
       "robbery": 8,
@@ -436,11 +435,11 @@ var ohCrime2018 = {
       "burglary": 113,
       "burglary": 327,
       "motorVehicleTheft": 39,
-      "arson": 1
+      "arson": 1}
     },
     {
-      "county": 'Athens',
-      "violentCrime": 18,
+      "county": 'Athens',"crime": {
+      "violentCrime" : 18,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 6,
       "robbery": 3,
@@ -449,11 +448,11 @@ var ohCrime2018 = {
       "burglary": 96,
       "burglary": 186,
       "motorVehicleTheft": 26,
-      "arson": 0
+      "arson": 0}
     },
     {
-      "county": 'Champaign',
-      "violentCrime": 21,
+      "county": 'Champaign',"crime": {
+      "violentCrime" : 21,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 6,
       "robbery": 0,
@@ -462,11 +461,11 @@ var ohCrime2018 = {
       "burglary": 48,
       "burglary": 112,
       "motorVehicleTheft": 7,
-      "arson": 2
+      "arson": 2}
     },
     {
-      "county": 'Clinton',
-      "violentCrime": 14,
+      "county": 'Clinton',"crime": {
+      "violentCrime" : 14,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 5,
       "robbery": 0,
@@ -475,11 +474,11 @@ var ohCrime2018 = {
       "burglary": 37,
       "burglary": 63,
       "motorVehicleTheft": 12,
-      "arson": 1
+      "arson": 1}
     },
     {
-      "county": 'Columbiana',
-      "violentCrime": 28,
+      "county": 'Columbiana',"crime": {
+      "violentCrime" : 28,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 4,
       "robbery": 4,
@@ -488,11 +487,11 @@ var ohCrime2018 = {
       "burglary": 90,
       "burglary": 208,
       "motorVehicleTheft": 28,
-      "arson": 4
+      "arson": 4}
     },
     {
-      "county": 'Coshocton',
-      "violentCrime": 42,
+      "county": 'Coshocton',"crime": {
+      "violentCrime" : 42,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 13,
       "robbery": 2,
@@ -501,11 +500,11 @@ var ohCrime2018 = {
       "burglary": 92,
       "burglary": 263,
       "motorVehicleTheft": 34,
-      "arson": 3
+      "arson": 3}
     },
     {
-      "county": 'Crawford',
-      "violentCrime": 3,
+      "county": 'Crawford',"crime": {
+      "violentCrime" : 3,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 1,
       "robbery": 0,
@@ -514,11 +513,11 @@ var ohCrime2018 = {
       "burglary": 36,
       "burglary": 59,
       "motorVehicleTheft": 7,
-      "arson": 0
+      "arson": 0}
     },
     {
-      "county": 'Defiance',
-      "violentCrime": 13,
+      "county": 'Defiance',"crime": {
+      "violentCrime" : 13,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 6,
       "robbery": 0,
@@ -527,11 +526,11 @@ var ohCrime2018 = {
       "burglary": 34,
       "burglary": 85,
       "motorVehicleTheft": 3,
-      "arson": 2
+      "arson": 2}
     },
     {
-      "county": 'Erie',
-      "violentCrime": 5,
+      "county": 'Erie',"crime": {
+      "violentCrime" : 5,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 0,
       "robbery": 0,
@@ -540,11 +539,11 @@ var ohCrime2018 = {
       "burglary": 45,
       "burglary": 151,
       "motorVehicleTheft": 6,
-      "arson": 0
+      "arson": 0}
     },
     {
-      "county": 'Fayette',
-      "violentCrime": 39,
+      "county": 'Fayette',"crime": {
+      "violentCrime" : 39,
       "murderAndNonnegligentManslaughter": 2,
       "rape": 11,
       "robbery": 7,
@@ -553,11 +552,11 @@ var ohCrime2018 = {
       "burglary": 117,
       "burglary": 252,
       "motorVehicleTheft": 19,
-      "arson": 2
+      "arson": 2}
     },
     {
-      "county": 'Gallia',
-      "violentCrime": 30,
+      "county": 'Gallia',"crime": {
+      "violentCrime" : 30,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 3,
       "robbery": 2,
@@ -566,11 +565,11 @@ var ohCrime2018 = {
       "burglary": 105,
       "burglary": 238,
       "motorVehicleTheft": 26,
-      "arson": 4
+      "arson": 4}
     },
     {
-      "county": 'Hancock',
-      "violentCrime": 20,
+      "county": 'Hancock',"crime": {
+      "violentCrime" : 20,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 7,
       "robbery": 3,
@@ -579,11 +578,11 @@ var ohCrime2018 = {
       "burglary": 35,
       "burglary": 113,
       "motorVehicleTheft": 8,
-      "arson": 1
+      "arson": 1}
     },
     {
-      "county": 'Hardin',
-      "violentCrime": 10,
+      "county": 'Hardin',"crime": {
+      "violentCrime" : 10,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 0,
       "robbery": 3,
@@ -592,11 +591,11 @@ var ohCrime2018 = {
       "burglary": 19,
       "burglary": 67,
       "motorVehicleTheft": 3,
-      "arson": 4
+      "arson": 4}
     },
     {
-      "county": 'Henry',
-      "violentCrime": 15,
+      "county": 'Henry',"crime": {
+      "violentCrime" : 15,
       "murderAndNonnegligentManslaughter": 1,
       "rape": 3,
       "robbery": 0,
@@ -605,11 +604,11 @@ var ohCrime2018 = {
       "burglary": 40,
       "burglary": 75,
       "motorVehicleTheft": 7,
-      "arson": 1
+      "arson": 1}
     },
     {
-      "county": 'Highland',
-      "violentCrime": 20,
+      "county": 'Highland',"crime": {
+      "violentCrime" : 20,
       "murderAndNonnegligentManslaughter": 2,
       "rape": 12,
       "robbery": 2,
@@ -618,11 +617,11 @@ var ohCrime2018 = {
       "burglary": 95,
       "burglary": 157,
       "motorVehicleTheft": 19,
-      "arson": 1
+      "arson": 1}
     },
     {
-      "county": 'Jackson',
-      "violentCrime": 29,
+      "county": 'Jackson',"crime": {
+      "violentCrime" : 29,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 7,
       "robbery": 3,
@@ -631,11 +630,11 @@ var ohCrime2018 = {
       "burglary": 67,
       "burglary": 143,
       "motorVehicleTheft": 20,
-      "arson": 0
+      "arson": 0}
     },
     {
-      "county": 'Knox',
-      "violentCrime": 51,
+      "county": 'Knox',"crime": {
+      "violentCrime" : 51,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 21,
       "robbery": 2,
@@ -644,11 +643,11 @@ var ohCrime2018 = {
       "burglary": 94,
       "burglary": 239,
       "motorVehicleTheft": 0,
-      "arson": 1
+      "arson": 1}
     },
     {
-      "county": 'Logan',
-      "violentCrime": 19,
+      "county": 'Logan',"crime": {
+      "violentCrime" : 19,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 3,
       "robbery": 1,
@@ -657,11 +656,11 @@ var ohCrime2018 = {
       "burglary": 43,
       "burglary": 119,
       "motorVehicleTheft": 14,
-      "arson": 1
+      "arson": 1}
     },
     {
-      "county": 'Marion',
-      "violentCrime": 36,
+      "county": 'Marion',"crime": {
+      "violentCrime" : 36,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 16,
       "robbery": 7,
@@ -670,11 +669,11 @@ var ohCrime2018 = {
       "burglary": 122,
       "burglary": 742,
       "motorVehicleTheft": 24,
-      "arson": 2
+      "arson": 2}
     },
     {
-      "county": 'Meigs',
-      "violentCrime": 17,
+      "county": 'Meigs',"crime": {
+      "violentCrime" : 17,
       "murderAndNonnegligentManslaughter": 1,
       "rape": 3,
       "robbery": 1,
@@ -683,11 +682,11 @@ var ohCrime2018 = {
       "burglary": 51,
       "burglary": 133,
       "motorVehicleTheft": 33,
-      "arson": 4
+      "arson": 4}
     },
     {
-      "county": 'Mercer',
-      "violentCrime": 10,
+      "county": 'Mercer',"crime": {
+      "violentCrime" : 10,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 4,
       "robbery": 0,
@@ -696,11 +695,11 @@ var ohCrime2018 = {
       "burglary": 8,
       "burglary": 73,
       "motorVehicleTheft": 1,
-      "arson": 0
+      "arson": 0}
     },
     {
-      "county": 'Monroe',
-      "violentCrime": 15,
+      "county": 'Monroe',"crime": {
+      "violentCrime" : 15,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 7,
       "robbery": 0,
@@ -709,11 +708,11 @@ var ohCrime2018 = {
       "burglary": 14,
       "burglary": 23,
       "motorVehicleTheft": 7,
-      "arson": 1
+      "arson": 1}
     },
     {
-      "county": 'Morgan',
-      "violentCrime": 24,
+      "county": 'Morgan',"crime": {
+      "violentCrime" : 24,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 4,
       "robbery": 0,
@@ -722,11 +721,11 @@ var ohCrime2018 = {
       "burglary": 51,
       "burglary": 77,
       "motorVehicleTheft": 10,
-      "arson": 2
+      "arson": 2}
     },
     {
-      "county": 'Noble',
-      "violentCrime": 1,
+      "county": 'Noble',"crime": {
+      "violentCrime" : 1,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 1,
       "robbery": 0,
@@ -735,11 +734,11 @@ var ohCrime2018 = {
       "burglary": 12,
       "burglary": 25,
       "motorVehicleTheft": 1,
-      "arson": 0
+      "arson": 0}
     },
     {
-      "county": 'Pike',
-      "violentCrime": 37,
+      "county": 'Pike',"crime": {
+      "violentCrime" : 37,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 12,
       "robbery": 2,
@@ -748,11 +747,11 @@ var ohCrime2018 = {
       "burglary": 101,
       "burglary": 231,
       "motorVehicleTheft": 48,
-      "arson": 5
+      "arson": 5}
     },
     {
-      "county": 'Preble',
-      "violentCrime": 14,
+      "county": 'Preble',"crime": {
+      "violentCrime" : 14,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 2,
       "robbery": 0,
@@ -761,11 +760,11 @@ var ohCrime2018 = {
       "burglary": 38,
       "burglary": 135,
       "motorVehicleTheft": 34,
-      "arson": 1
+      "arson": 1}
     },
     {
-      "county": 'Putnam',
-      "violentCrime": 10,
+      "county": 'Putnam',"crime": {
+      "violentCrime" : 10,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 1,
       "robbery": 0,
@@ -774,11 +773,11 @@ var ohCrime2018 = {
       "burglary": 10,
       "burglary": 65,
       "motorVehicleTheft": 0,
-      "arson": 0
+      "arson": 0}
     },
     {
-      "county": 'Ross',
-      "violentCrime": 114,
+      "county": 'Ross',"crime": {
+      "violentCrime" : 114,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 31,
       "robbery": 3,
@@ -787,11 +786,11 @@ var ohCrime2018 = {
       "burglary": 270,
       "burglary": 676,
       "motorVehicleTheft": 125,
-      "arson": 17
+      "arson": 17}
     },
     {
-      "county": 'Scioto',
-      "violentCrime": 58,
+      "county": 'Scioto',"crime": {
+      "violentCrime" : 58,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 12,
       "robbery": 13,
@@ -800,11 +799,11 @@ var ohCrime2018 = {
       "burglary": 240,
       "burglary": 539,
       "motorVehicleTheft": 103,
-      "arson": 14
+      "arson": 14}
     },
     {
-      "county": 'Shelby',
-      "violentCrime": 14,
+      "county": 'Shelby',"crime": {
+      "violentCrime" : 14,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 6,
       "robbery": 1,
@@ -813,11 +812,11 @@ var ohCrime2018 = {
       "burglary": 14,
       "burglary": 96,
       "motorVehicleTheft": 10,
-      "arson": 0
+      "arson": 0}
     },
     {
-      "county": 'Tuscarawas',
-      "violentCrime": 18,
+      "county": 'Tuscarawas',"crime": {
+      "violentCrime" : 18,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 7,
       "robbery": 1,
@@ -826,11 +825,11 @@ var ohCrime2018 = {
       "burglary": 68,
       "burglary": 193,
       "motorVehicleTheft": 23,
-      "arson": 2
+      "arson": 2}
     },
     {
-      "county": 'Van Wert',
-      "violentCrime": 25,
+      "county": 'Van Wert',"crime": {
+      "violentCrime" : 25,
       "murderAndNonnegligentManslaughter": 1,
       "rape": 7,
       "robbery": 0,
@@ -839,11 +838,11 @@ var ohCrime2018 = {
       "burglary": 36,
       "burglary": 61,
       "motorVehicleTheft": 8,
-      "arson": 1
+      "arson": 1}
     },
     {
-      "county": 'Vinton',
-      "violentCrime": 20,
+      "county": 'Vinton',"crime": {
+      "violentCrime" : 20,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 1,
       "robbery": 2,
@@ -852,11 +851,11 @@ var ohCrime2018 = {
       "burglary": 72,
       "burglary": 101,
       "motorVehicleTheft": 19,
-      "arson": 0
+      "arson": 0}
     },
     {
-      "county": 'Washington',
-      "violentCrime": 31,
+      "county": 'Washington',"crime": {
+      "violentCrime" : 31,
       "murderAndNonnegligentManslaughter": 0,
       "rape": 15,
       "robbery": 1,
@@ -865,11 +864,11 @@ var ohCrime2018 = {
       "burglary": 89,
       "burglary": 165,
       "motorVehicleTheft": 19,
-      "arson": 2
+      "arson": 2}
     },
     {
-      "county": 'Wayne',
-      "violentCrime": 46,
+      "county": 'Wayne',"crime": {
+      "violentCrime" : 46,
       "murderAndNonnegligentManslaughter": 1,
       "rape": 13,
       "robbery": 2,
@@ -878,11 +877,11 @@ var ohCrime2018 = {
       "burglary": 149,
       "burglary": 281,
       "motorVehicleTheft": 48,
-      "arson": 3
+      "arson": 3}
     },
     {
-      "county": 'Wyandot',
-      "violentCrime": 3,
+      "county": 'Wyandot',"crime": {
+      "violentCrime" : 3,
       "murderAndNonnegligentManslaughter": 1,
       "rape": 0,
       "robbery": 0,
@@ -891,7 +890,7 @@ var ohCrime2018 = {
       "burglary": 0,
       "burglary": 1,
       "motorVehicleTheft": 0,
-      "arson": 1
+      "arson": 1}
     }
   ]
 }
