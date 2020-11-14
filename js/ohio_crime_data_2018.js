@@ -1,6 +1,6 @@
 var ohCrime2018 = {
     "type": "FeaturesCollection",
-    "features":
+    "counties":
 [
     {
       "county": 'Allen',
