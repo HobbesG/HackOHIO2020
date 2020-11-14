@@ -122,7 +122,7 @@ function onEachFeature(feature, layer){
 }
 
 
-L.geoJSON(mapZoom(), {
+geoJSON = L.geoJSON(mapZoom(), {
     style: style,
     onEachFeature: onEachFeature
     
@@ -130,7 +130,8 @@ L.geoJSON(mapZoom(), {
 
 // Change geoJSON based on zoom
 map.on('zoomend', function(e){
-    L.geoJSON(mapZoom(), {
+    map.removeLayer(geoJSON)
+   geoJSON = L.geoJSON(mapZoom(), {
         style: style,
         onEachFeature: onEachFeature
         
