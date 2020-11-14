@@ -13,7 +13,6 @@ function script(){
         accessToken: 'pk.eyJ1IjoiemFjaGZiIiwiYSI6ImNraGd6bDAwaTA1Mm8ydXBpOHc2YXFpa2oifQ.ApIhHDnfpfXaG5uE9A3SSg'
     }).addTo(map);
 
-var geoJSON = L.geoJSON(counties, {style: style}).addTo(map);
 
 function style(feature) {
     return {
@@ -25,6 +24,17 @@ function style(feature) {
         fillOpacity: 0.7
     };
 }
+function mapZoom(){
+    if(map.getZoom() > 6){
+        return counties
+    }
+    else{
+        return statesData
+    }
+
+}
+
+var geoJSON = L.geoJson(mapZoom(), {style: style}).addTo(map);
     
 function getColor(d) {
     var color;
@@ -36,15 +46,102 @@ function getColor(d) {
     return color;
 }
 
+var info = L.control();
+
+info.onAdd = function (map) {
+    this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+    this.update();
+    return this._div;
+};
+
+
+info.update = function (property) {
+
+    if(map.getZoom() > 6){
+    this._div.innerHTML = '<h4>Information</h4>' +  (property ?
+        '<b>State:'+ property.STATE + '</b> <br />'+
+        '<b> County: ' + property.NAME + '</b><br />' 
+        : 'Hover over a state');
+    }
+    else{
+        this._div.innerHTML = '<h4>Information</h4>' +  (property ?
+            '<b>State:'+ property.name + '</b> <br />'
+            : 'Hover over a state');
+    }
+};
+
+
+
+info.addTo(map);
+
+
+
+
+
+function highlightFeature(e) {
+    var layer = e.target;
+
+    layer.setStyle({
+        weight: 5,
+        color: '#666',
+        dashArray: '',
+        fillOpacity: 0.7
+    });
+
+    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+        layer.bringToFront();
+    }
+
+    info.update(layer.feature.properties);
+}
+
+function resetHighlight(e) {
+    var layer = e.target;
+    geoJSON.resetStyle(layer);
+    info.update();
+  
+}
+
+function zoomToFeature(e) {
+    map.fitBounds(e.target.getBounds());
+}
+
+
 function onEachFeature(feature, layer){
     if(feature.properties && feature.properties.NAME){
         layer.bindPopup(feature.properties.NAME, {closeOnClick: false, autoClose: false});
     }
-}
 
-L.geoJSON(counties, {onEachFeature: onEachFeature}).addTo(map);
+    layer.on({
+        mouseover: highlightFeature,
+        mouseout: resetHighlight,
+        click: zoomToFeature
+    });
 
     
+}
+
+// Change geoJSON based on zoom
+
+
+// map.on('zoomend', function(e){
+//     L.geoJSON(mapZoom(), {
+//         style: style,
+//         onEachFeature: onEachFeature
+        
+//     }).addTo(map);
+
+// });
+
+L.geoJSON(mapZoom(), {
+    style: style,
+    onEachFeature: onEachFeature
+    
+}).addTo(map);
+
+
+
+
     
   
 }
