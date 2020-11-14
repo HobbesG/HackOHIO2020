@@ -28,66 +28,123 @@
                     </a>
                 </div>
 
-            <div id="navbarBasicExample" class="navbar-menu">
-                <div class="navbar-start">
-                <a class="navbar-item" href="index.html">
-                    Home
-                </a>
-
-                <a class="navbar-item" href="https://github.com/HobbesG/HackOHIO2020">
-                    Source
-                </a>
-
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                    More
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start">
+                    <a class="navbar-item" href="index.html">
+                        Home
                     </a>
+                        
+                        <a class="navbar-item" href="https://github.com/HobbesG/HackOHIO2020">
+                            Source
+                        </a>
 
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item">
-                            About
-                        </a>
-                        <a class="navbar-item">
-                            Jobs
-                        </a>
-                        <a class="navbar-item">
-                            Contact
-                        </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item">
-                        Report an issue
-                        </a>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                                More
+                            </a>
+
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item">
+                                    About
+                                </a>
+                                <a class="navbar-item">
+                                    Jobs
+                                </a>
+                                <a class="navbar-item">
+                                    Contact
+                                </a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item">
+                                    Report an issue
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <button class="button">
+                                <span class="icon">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                                <span>GitHub</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
-                </div>
-
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <button class="button">
-    <span class="icon">
-      <i class="fab fa-github"></i>
-    </span>
-    <span>GitHub</span>
-  </button>
-      </div>
-    </div>
-  </div>
-</nav>
+            </nav>
             <!-- MAP -->
-		</center>
-		<section class="section">
-		<div class="container">
-            <div class="box">
-		<div id="mapid"></div>
+            <section class="section">
+                <div class="container">
+                    <div class="box">
+                        <div id="mapid"></div>
+                        <center>
+                            <button class="button is-info is-light">How to Use</button>
+                            <button class="button is-success is-light">Add Location</button>
+                            <button class="button is-warning is-light">Your Preferences</button>
+                        </center>
+                    </div>
                 </div>
-		<script src="js\counties5m.js"></script>
-		<script src="js\states5m.js"></script>
-		<script src="js\ohio_crime_data_2018.js"></script>
-		<script>script();</script>
-		</div>
-		</section>
-        
-        <!-- SELECTION -->
+            </section>
+            
+            <script src="js\counties5m.js"></script>
+            <script src="js\states5m.js"></script>
+            <script src="js\ohio_crime_data_2018.js"></script>
+            <script>script();</script>
+            
+            <section class="section">
+                <div class="container">
+                    <div class="box">
+                        <h1 class="title">Analysis</h1>
+                        <p class="subtitle">After you make your first selection, our tool will display the relevant data in the table below.<br>
+                            Once you select more, the tool will evaluate which property is best for you based on your preferences.</p>
+                        <table class="table is-hoverable">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Location</th>
+      <th><div class="tooltip">Crime Index<span class="tooltiptext">Number of violent crimes committed in this county in 2018, including automobile theft, robbery, arson, and property crime.</span></div></th>
+      <th><abbr title="Won">Weather</abbr></th>
+      <th><abbr title="Drawn">D</abbr></th>
+      <th><abbr title="Lost">L</abbr></th>
+      <th><abbr title="Goals for">GF</abbr></th>
+      <th><abbr title="Goals against">GA</abbr></th>
+      <th><abbr title="Goal difference">GD</abbr></th>
+      <th><abbr title="Points">Pts</abbr></th>
+    </tr>
+</thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+        <td>Calvin's Mom's House</td>
+      <td>38</td>
+      <td>23</td>
+      <td>12</td>
+      <td>3</td>
+      <td>68</td>
+      <td>36</td>
+      <td>+32</td>
+      <td>81</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>My Basement</td>
+      <td>38</td>
+      <td>20</td>
+      <td>11</td>
+      <td>7</td>
+      <td>65</td>
+      <td>36</td>
+      <td>+29</td>
+      <td>71</td>
+    </tr>
+  </tbody>
+</table>
+                    </div>
+                </div>
+            
+            
+            </section>
         
         
 		
@@ -102,5 +159,6 @@
     </p>
   </div>
 </footer>
+        </center>
 	</body>
 </html>
