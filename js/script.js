@@ -21,7 +21,7 @@ function style(feature) {
         opacity: 1,
         color: 'white',
         dashArray: '3',
-        fillOpacity: 0.3
+        fillOpacity: 0.5
     };
 }
 function mapZoom(){
@@ -35,6 +35,7 @@ function mapZoom(){
 }
 
 var geoJSON = L.geoJson(mapZoom(), {style: style}).addTo(map);
+map.removeLayer(geoJSON);
     
 function getColor(d) {
     var color;
