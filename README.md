@@ -1,1 +1,2 @@
-# HackOHIO2020
+# HackOHIO2020 - Space Team
+An interactive risk assessment tool for prospective homebuyers or business owners who want to purchase property in an unfamiliar area. The tool allows individuals to select and compare statistics regarding properties in various areas, including crime rate, weather patterns, environmental/climate changes; as well as socioeconomic factors like school districts, tax rates, political voting history, etc.
