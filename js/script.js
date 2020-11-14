@@ -121,23 +121,23 @@ function onEachFeature(feature, layer){
     
 }
 
-// Change geoJSON based on zoom
-
-
-// map.on('zoomend', function(e){
-//     L.geoJSON(mapZoom(), {
-//         style: style,
-//         onEachFeature: onEachFeature
-        
-//     }).addTo(map);
-
-// });
 
 L.geoJSON(mapZoom(), {
     style: style,
     onEachFeature: onEachFeature
     
 }).addTo(map);
+
+// Change geoJSON based on zoom
+map.on('zoomend', function(e){
+    L.geoJSON(mapZoom(), {
+        style: style,
+        onEachFeature: onEachFeature
+        
+    }).addTo(map);
+
+});
+
 
 
 
