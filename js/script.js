@@ -13,8 +13,28 @@ function script(){
         accessToken: 'pk.eyJ1IjoiemFjaGZiIiwiYSI6ImNraGd6bDAwaTA1Mm8ydXBpOHc2YXFpa2oifQ.ApIhHDnfpfXaG5uE9A3SSg'
     }).addTo(map);
 
-var geoJSON = L.geoJSON(counties).addTo(map);
+var geoJSON = L.geoJSON(counties, {style: style}).addTo(map);
+
+function style(feature) {
+    return {
+        fillColor: getColor(feature.properties.STATE),
+        weight: 2,
+        opacity: 1,
+        color: 'white',
+        dashArray: '3',
+        fillOpacity: 0.7
+    };
+}
     
+function getColor(d) {
+    var color;
+    if(d >25){
+        color = 'red';
+    }else{
+        color = 'blue';
+    }
+    return color;
+}
    
 
     
