@@ -1,3 +1,5 @@
+
+
 function script(){
     
     var mymap = L.map('mapid').setView([39.9612, -82.9988], 8);
@@ -25,6 +27,12 @@ function script(){
     ];
 
     var polygon = L.polyline(latlngs, {color: 'red'}).addTo(mymap);
+    
+    // var geoCounties = JSON.parse('geoJson/gz_2010_us_050_00_500k.json');
+    // var countiesArray = [];
+    // countiesArray = geoCounties.countiesArray;
+
+    L.geoJson(statesData).addTo(map);
     
   
 }
