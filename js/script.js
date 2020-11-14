@@ -46,17 +46,13 @@ function getColor(d) {
         }
     }
 
-    var color;
-    if(stat >25){
-        color = 'red';
-    }
-    else if(stat == undefined){
-        color = 'black';
-    }
-    else{
-        color = 'blue';
-    }
-    return color;
+    return stat > 60  ? '#FF4C48' :
+        stat > 50  ? '#FFA25C' :
+        stat > 40  ? '#FAA855' :
+        stat > 30   ? '#FFFF85' :
+        stat > 20   ? '#D2E164' :
+        stat > 10   ? '#5EA62F' :
+                      'white';
 }
 
 var info = L.control();
