@@ -1,6 +1,6 @@
 var ohCrime2018 = {
     "type": "FeaturesCollection",
-    "counties":[
+    "countiesName":[
     {
       "county": 'Allen',"crime": {
       "murderAndNonnegligentManslaughter": 1,

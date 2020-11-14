@@ -16,7 +16,7 @@ function script(){
 
 function style(feature) {
     return {
-        fillColor: getColor(feature.properties.STATE),
+        fillColor: getColor(feature.properties.NAME),
         weight: 2,
         opacity: 1,
         color: 'white',
@@ -38,10 +38,22 @@ var geoJSON = L.geoJson(mapZoom(), {style: style}).addTo(map);
 map.removeLayer(geoJSON);
     
 function getColor(d) {
+    for(var c in ohCrime2018.countiesName){
+
+        if(d == ohCrime2018.countiesName[c].county){
+        var stat = ohCrime2018.countiesName[c].crime.motorVehicleTheft
+        
+        }
+    }
+
     var color;
-    if(d >25){
+    if(stat >25){
         color = 'red';
-    }else{
+    }
+    else if(stat == undefined){
+        color = 'black';
+    }
+    else{
         color = 'blue';
     }
     return color;
