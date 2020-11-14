@@ -35,7 +35,14 @@ function getColor(d) {
     }
     return color;
 }
-   
+
+function onEachFeature(feature, layer){
+    if(feature.properties && feature.properties.NAME){
+        layer.bindPopup(feature.properties.NAME, {closeOnClick: false, autoClose: false});
+    }
+}
+
+L.geoJSON(counties, {onEachFeature: onEachFeature}).addTo(map);
 
     
     
