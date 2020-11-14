@@ -1,5 +1,16 @@
 <html>
 	<head>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+		crossorigin=""/>
+	 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+		crossorigin=""></script>
+	 <style>
+		 #mapid {position: absolute; top: 0; bottom: 0; left: 0; right: 0;}
+	 </style>
+	 
+
 		<title>Space Team</title>
 		<link href="https://fonts.googleapis.com/css?family=Encode Sans Semi Condensed" rel="stylesheet">
 		<link rel="stylesheet" href="style.css">
@@ -8,5 +19,20 @@
 		<center>
 			<h1>Space Team</h1>
 		</center>
+		<div id="mapid"></div>
+		<script>
+					var mymap = L.map('mapid').setView([39.828, -98.5795], 5);
+					L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'pk.eyJ1IjoiemFjaGZiIiwiYSI6ImNraGd6bDAwaTA1Mm8ydXBpOHc2YXFpa2oifQ.ApIhHDnfpfXaG5uE9A3SSg'
+}).addTo(mymap);
+		</script>
+
 	</body>
 </html>
+
+
