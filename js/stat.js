@@ -1,19 +1,26 @@
-function stat(d, type){
+function testStat(d, type){
     switch(type){
-        case crimeStat:
-            return crimeStat(d)
-        case crimeRate:
-            return crimeRate(d)
-        case climate:
-            return crimeStat(d)
-        case weather:
-            return crimeRate(d)
-        case countyTax:
-            return crimeStat(d)
-        case voterHist:
-            return crimeRate(d)
-        case popDens:
-            return crimeRate(d)
+        case "crimeStat":
+            var num = crimeStat(d)
+            return num
+        case "crimeRate":
+            var num = crimeRate(d)
+            return num
+        case "climate":
+            var num = crimeStat(d)
+            return num
+        case "weather":
+            var num = crimeRate(d)
+            return num
+        case "countyTax":
+            var num = crimeStat(d)
+            return num``
+        case "voterHist":
+            var num = crimeRate(d)
+            return num
+        case "popDens":
+            var num = crimeRate(d)
+            return num
         default:
             return undefined
 

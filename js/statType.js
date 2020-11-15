@@ -2,21 +2,21 @@ function statType(type){
 
     switch(type){
         case 1:
-            return crimeStat
+            return "crimeStat"
         case 2:
-            return crimeRate
+            return "crimeRate"
         case 3:
-            return climate
+            return "climate"
         case 4:
-            return weather
+            return "weather"
         case 5:
-            return countyTax
+            return "countyTax"
         case 6:
-            return voterHist
+            return "voterHist"
         case 7:
-            return popDens
+            return "popDens"
         default:
-            return crimeStat
+            return 'crimeStat'
     }
 
 

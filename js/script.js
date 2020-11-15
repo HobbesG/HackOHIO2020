@@ -40,8 +40,8 @@ map.removeLayer(geoJSON);
 function getColor(d) {
 
     var type = statType(1)
-    var stat = stat(d,type)
-
+    var stat = testStat(d,type)
+ 
     return stat == undefined ? 'black':
         stat > 60  ? '#FF4C48' :
         stat > 50  ? '#FFA25C' :
