@@ -16,7 +16,7 @@ function script(){
 
 function style(feature) {
     return {
-        fillColor: getColor(feature.properties.NAME),
+        fillColor: getColor(feature.properties),
         weight: 2,
         opacity: 1,
         color: 'white',
@@ -40,8 +40,11 @@ map.removeLayer(geoJSON);
 function getColor(d) {
 
     var type = statType(1)
-    var stat = testStat(d,type)
- 
+    var stat = testStat(d.NAME,type)
+
+    if(d.STATE != 39){
+        stat = undefined
+    }
     return stat == undefined ? 'black':
         stat > 60  ? '#FF4C48' :
         stat > 50  ? '#FFA25C' :
