@@ -17,7 +17,7 @@
                 $("#hideModal").click(function() {
                     $("#pref").removeClass("is-active");
                     $('#mapid').css("visibility", "visible");
-                    //This is the worst thing I've ever coded
+                    // TODO: Anything but this
                     document.getElementById("mapid").remove();
                     var d = document.createElement("div");
                     d.id = "mapid";
@@ -44,6 +44,19 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/bulma.css">
 		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+        
+        <!-- Load Esri Leaflet from CDN -->
+        <script src="https://unpkg.com/esri-leaflet@2.5.0/dist/esri-leaflet.js"
+                integrity="sha512-ucw7Grpc+iEQZa711gcjgMBnmd9qju1CICsRaryvX7HJklK0pGl/prxKvtHwpgm5ZHdvAil7YPxI1oWPOWK3UQ=="
+                crossorigin=""></script>
+
+        <!-- Load Esri Leaflet Geocoder from CDN -->
+        <link rel="stylesheet" href="https://unpkg.com/esri-leaflet-geocoder@2.3.3/dist/esri-leaflet-geocoder.css"
+        integrity="sha512-IM3Hs+feyi40yZhDH6kV8vQMg4Fh20s9OzInIIAc4nx7aMYMfo+IenRUekoYsHZqGkREUgx0VvlEsgm7nCDW9g=="
+        crossorigin="">
+        <script src="https://unpkg.com/esri-leaflet-geocoder@2.3.3/dist/esri-leaflet-geocoder.js"
+                integrity="sha512-HrFUyCEtIpxZloTgEKKMq4RFYhxjJkCiF5sDxuAokklOeZ68U2NPfh4MFtyIVWlsKtVbK5GD2/JzFyAfvT5ejA=="
+                crossorigin=""></script>
         <style>
             #mapid { margin: auto; height: 60%; width: 95%; }
         </style>
@@ -99,7 +112,7 @@
 
                     <div class="navbar-end">
                         <div class="navbar-item">
-                            <button class="button">
+                            <button class="button" onclick="window.open('https://github.com/HobbesG/HackOHIO2020','_blank')">
                                 <span class="icon">
                                     <i class="fab fa-github"></i>
                                 </span>
@@ -180,9 +193,9 @@
                     </header>
                     <section class="modal-card-body">
                         <p class="title is-4">Display Settings</p>
-                        <p>Color the map by: <span><div class="select">
+                        <p>Show on map: <span><div class="select">
                             <select id="mapkey">
-                                <option value="0">No Color</option>
+                                <option value="0">Nothing</option>
                                 <option disabled>──────────</option>
                                 <option value="1">Crime Index</option>
                                 <option value="2">Crime Rate</option>
@@ -191,6 +204,7 @@
                                 <option value="5">County Tax Rate</option>
                                 <option value="6">Voting History</option>
                                 <option value="7">Population Density</option>
+                                <option value="7">School Districts</option>
                             </select>
                         </div>
                             </span>
@@ -263,7 +277,9 @@
                         </table>
                     </section>
                     <footer class="modal-card-foot">
-                    <button class="button is-success" id="hideModal">Save</button>
+                        <div id="saveButton">
+                            <button class="button is-success" id="hideModal">Save</button>
+                        </div>
                     </footer>
                 </div>
             </div>
