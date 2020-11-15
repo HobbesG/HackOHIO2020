@@ -35,8 +35,14 @@
                     if(address === "N/A") {
                         return;
                     }
-                    var row = "<tr><td><b>" + $("#analysis").find("tr").length + "<b></td>";
-                    row += "<td>" + address + "</td>";
+                    var array = address.split(",");
+                    if ($('#analysis td:contains())').length {
+                        return;   
+                    }
+                    
+                    $('html, body').animate({ scrollTop: $("#analysisScroll").offset().top}, 1000);
+                    var row = "<tr><td><b>" + ($("#analysis").find("tr").length - 1) + "<b></td>";
+                    row += "<td>" + array[0] + "</td>";
                     $('#analysis tr:last').after(row);
                 });
                 
@@ -134,6 +140,7 @@
             <script src="js\data\states5m.js"></script>
             <script src="js\data\ohio_crime_data_2018.js"></script>
             <script src="js\data\ohio_crime_data_2019.js"></script>
+            <script src="js\data\State_Wide_School_Districts.js"></script>
             <script src="js\statType.js"></script>
             <script src="js\stat.js"></script>
             <script src="js\stateNum.js"></script>
@@ -272,7 +279,7 @@
             </div>
             
             <!-- ANALYSIS TABLE -->
-            <section class="section">
+            <section class="section" id="analysisScroll">
                 <div class="container">
                     <div class="box">
                         <h1 class="title">Analysis Table</h1>
@@ -294,30 +301,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th>1</th>
-                                    <td>Calvin's Mom's House</td>
-                                    <td>38</td>
-                                    <td>23</td>
-                                    <td>12</td>
-                                    <td>3</td>
-                                    <td>68</td>
-                                    <td>36</td>
-                                    <td>+32</td>
-                                    <td>81</td>
-                                </tr>
-                                <tr>
-                                    <th>2</th>
-                                    <td>My Basement</td>
-                                    <td>38</td>
-                                    <td>20</td>
-                                    <td>11</td>
-                                    <td>7</td>
-                                    <td>65</td>
-                                    <td>36</td>
-                                    <td>+29</td>
-                                    <td>71</td>
-                                </tr>
+                                <tr></tr>
                             </tbody>
                         </table>
                     </div>
