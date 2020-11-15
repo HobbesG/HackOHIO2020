@@ -16,7 +16,7 @@ function statType(type){
         case 7:
             return "popDens"
         default:
-            return 'crimeStat'
+            return "undefined"
     }
 
 

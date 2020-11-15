@@ -1,7 +1,4 @@
-
-
 function script(ID){
-    
     var map = L.map('mapid').setView([39.9612, -82.9988], 8);
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>, geoJSON Data © <a href="https://www.census.gov/">US Census Bureau</a>',
@@ -13,7 +10,6 @@ function script(ID){
         accessToken: 'pk.eyJ1IjoiemFjaGZiIiwiYSI6ImNraGd6bDAwaTA1Mm8ydXBpOHc2YXFpa2oifQ.ApIhHDnfpfXaG5uE9A3SSg'
     }).addTo(map);
 
-
 function style(feature) {
     return {
         fillColor: getColor(feature.properties),
@@ -24,6 +20,7 @@ function style(feature) {
         fillOpacity: 0.5
     };
 }
+
 function mapZoom(){
     if(map.getZoom() > 6){
         return counties
@@ -38,8 +35,7 @@ var geoJSON = L.geoJson(mapZoom(), {style: style}).addTo(map);
 map.removeLayer(geoJSON);
     
 function getColor(d) {
-
-    var type = statType(ID)
+    var type = statType(parseInt(ID))
     var stat = testStat(d.NAME,type)
 
     if(d.STATE != 39){

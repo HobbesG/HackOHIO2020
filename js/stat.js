@@ -14,7 +14,7 @@ function testStat(d, type){
             return num
         case "countyTax":
             var num = crimeStat(d)
-            return num``
+            return num
         case "voterHist":
             var num = crimeRate(d)
             return num
