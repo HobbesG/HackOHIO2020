@@ -1,8 +1,9 @@
 <html>
     <head>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
         <script type="text/javascript">
-            $(document).ready(function () {
+            $(document).ready(function() {
                 $("#showModal").click(function() {
                     $("#pref").addClass("is-active");
                     $('#mapid').css("visibility", "hidden");
@@ -16,6 +17,12 @@
                 $("#hideModal").click(function() {
                     $("#pref").removeClass("is-active");
                     $('#mapid').css("visibility", "visible");
+                    //This is the worst thing I've ever coded
+                    document.getElementById("mapid").remove();
+                    var d = document.createElement("div");
+                    d.id = "mapid";
+                    document.getElementById("mapbox").appendChild(d);
+                    script(parseInt($("#mapkey").val()));
                 });
                 
                 $("#hideInstrModal").click(function() {
@@ -37,7 +44,6 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/bulma.css">
 		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
-		<script src="js/script.js"></script>
         <style>
             #mapid { margin: auto; height: 60%; width: 95%; }
         </style>
@@ -105,10 +111,16 @@
             </nav>
             
             <!-- MAP BOX -->
+            <!-- MAP BOX -->
+            <!-- MAP BOX -->
+            <!-- MAP BOX -->
+            <!-- MAP BOX -->
             <section class="section">
                 <div class="container">
                     <div class="box">
-                        <div id="mapid"></div>
+                        <div id="mapbox">
+                            <div id="mapid"></div>
+                        </div>
                         <center>
                             <br>
                             <!-- BUTTONS -->
@@ -125,8 +137,7 @@
             <script src="js\data\ohio_crime_data_2018.js"></script>
             <script src="js\statType.js"></script>
             <script src="js\stat.js"></script>
-            
-            <script>script();</script>
+            <script>script(0);</script>
             
             <!-- INSTRUCTIONS -->
             <div class="modal" id="instr">
