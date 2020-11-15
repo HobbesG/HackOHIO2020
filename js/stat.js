@@ -62,3 +62,5 @@ function crimeRate(d){
     return stat
 }
 
+
+
