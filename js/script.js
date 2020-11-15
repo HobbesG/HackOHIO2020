@@ -138,5 +138,17 @@ map.on('zoomend', function(e){
 
 });
 
+var geocodeService = L.esri.Geocoding.geocodeService();
+
+  map.on('click', function (e) {
+    geocodeService.reverse().latlng(e.latlng).run(function (error, result) {
+      if (error) {
+        return;
+      }
+
+      L.marker(result.latlng).addTo(map).bindPopup(result.address.Match_addr).openPopup();
+    });
+  });
+
  
 }
