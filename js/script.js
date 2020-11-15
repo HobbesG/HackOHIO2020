@@ -148,10 +148,8 @@ var geocodeService = L.esri.Geocoding.geocodeService();
       if (error || map.getZoom() < 8) {
         return;
       }
-
       L.marker(result.latlng).addTo(map).bindPopup(result.address.Match_addr).openPopup();
+        document.getElementById("address").innerHTML = result.address.Match_addr;
     });
   });
-
- 
 }

@@ -30,6 +30,16 @@
                     $('#mapid').css("visibility", "visible");
                 });
                 
+                $("#addLocation").click(function() {
+                    var address = document.getElementById("address").innerHTML;
+                    if(address === "N/A") {
+                        return;
+                    }
+                    var row = "<tr><td><b>" + $("#analysis").find("tr").length + "<b></td>";
+                    row += "<td>" + address + "</td>";
+                    $('#analysis tr:last').after(row);
+                });
+                
                 var dropdown = document.querySelector('.dropdown');
                 dropdown.addEventListener('click', function(event) {
                     event.stopPropagation();
@@ -114,6 +124,7 @@
                             <button class="button is-info is-light" id="instructionsModal">How to Use</button>
                             <button class="button is-success is-light" id="addLocation">Add Location</button>
                             <button class="button is-warning is-light" id="showModal">Preferences</button>
+                            <p style="display: none;" id="address">N/A</p>
                         </center>
                     </div>
                 </div>
@@ -267,7 +278,7 @@
                         <h1 class="title">Analysis Table</h1>
                         <p class="subtitle">After you make your first selection, our tool will display the relevant data in the table below.<br>
                             Once you select more, the tool will evaluate which property is best for you based on your preferences.</p>
-                        <table class="table is-hoverable">
+                        <table class="table is-hoverable" id="analysis">
                             <thead>
                                 <tr>
                                     <th>#</th>
