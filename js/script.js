@@ -48,7 +48,7 @@ function getColor(d) {
         stat > 30   ? '#FFFF85' :
         stat > 20   ? '#D2E164' :
         stat > 10   ? '#5EA62F' :
-                      'white';
+                      '#5EA62F';
 }
 
 var info = L.control();
