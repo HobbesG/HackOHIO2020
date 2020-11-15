@@ -22,8 +22,11 @@ function style(feature) {
 }
 
 function mapZoom(){
-    if(map.getZoom() > 6){
+    if(map.getZoom() > 6 && map.getZoom() <= 8){
         return counties
+    }
+    else if(map.getZoom() > 8){
+        return undefined
     }
     else{
         return statesData
