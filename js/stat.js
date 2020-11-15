@@ -44,8 +44,21 @@ function crimeStat(d){
 }
 
 function crimeRate(d){
-    for(var c in ohCrime2018.countiesName.length && ohCrime2019.countiesName.length){
+    for(var c in ohCrime2019.countiesName){
         
+        if(d == ohCrime2019.countiesName[c].county){
+
+            var motorTheftDiff = ohCrime2019.countiesName[c].crime.motorVehicleTheft - ohCrime2018.countiesName[c].crime.motorVehicleTheft
+            var propertyCrimeDiff = ohCrime2019.countiesName[c].crime.propertyCrime - ohCrime2018.countiesName[c].crime.propertyCrime
+            var robberyDiff = ohCrime2019.countiesName[c].crime.robbery - ohCrime2018.countiesName[c].crime.robbery
+            var burglaryDiff = ohCrime2019.countiesName[c].crime.burglary - ohCrime2018.countiesName[c].crime.burglary
+            var larcenyDiff = ohCrime2019.countiesName[c].crime.larcenyTheft - ohCrime2018.countiesName[c].crime.larcenyTheft
+            var stat = (motorTheftDiff + propertyCrimeDiff + robberyDiff + burglaryDiff + larcenyDiff)/50
+        }
+        if(stat > 0){
+            stat = 100
+        }
     }
+    return stat
 }
 
