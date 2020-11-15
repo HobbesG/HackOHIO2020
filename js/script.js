@@ -65,7 +65,12 @@ info.onAdd = function (map) {
 
 info.update = function (property) {
 
-    if(map.getZoom() > 6){
+    if(ID == 8){
+        this._div.innerHTML = '<h4>Information</h4>' +  (property ?
+            '<b>School District: '+ property.NAME + '</b> <br />'
+            : 'Hover over a school district');
+    }
+    else if(map.getZoom() > 6){
     this._div.innerHTML = '<h4>Information</h4>' +  (property ?
         '<b>State: '+ stateNum(parseInt(property.STATE)) + '</b> <br />'+
         '<b> County: ' + property.NAME + '</b><br />' 
@@ -134,7 +139,9 @@ if(ID == 8){
         map.removeLayer(geoJSON);
         map.removeLayer(initialGeoJSON);
     
-       geoJSON = L.geoJSON(schoolDistricts).addTo(map);
+       geoJSON = L.geoJSON(schoolDistricts, {
+           onEachFeature: onEachFeature
+        }).addTo(map);
     
     });
 }
