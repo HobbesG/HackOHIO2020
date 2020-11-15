@@ -69,6 +69,9 @@
                     $('html, body').animate({ scrollTop: $("#analysisScroll").offset().top}, 1000);
                     var row = "<tr><td><b>" + ($("#analysis").find("tr").length - 1) + "<b></td>";
                     row += "<td>" + array[0] + "</td>";
+                    row += "<td>" + crimeStat(countyDataLower) + "</td>";
+                    row += "<td>" + crimeRate(countyDataLower) + "</td>";
+
                     $('#analysis tr:last').after(row);
                         
                 });
@@ -318,7 +321,7 @@
                                     <th>#</th>
                                     <th>Location</th>
                                     <th><div class="tooltip">Crime Index<span class="tooltiptext">Number of violent crimes committed in this county in 2018, including automobile theft, robbery, arson, and property crime.</span></div></th>
-                                    <th><abbr title="Won">Weather</abbr></th>
+                                    <th><abbr title="Won">Crime Rate</abbr></th>
                                     <th><abbr title="Drawn">D</abbr></th>
                                     <th><abbr title="Lost">L</abbr></th>
                                     <th><abbr title="Goals for">GF</abbr></th>
