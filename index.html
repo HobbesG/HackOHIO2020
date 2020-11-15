@@ -37,6 +37,7 @@
                         return;
                     }
                     var array = address.split(",");
+                    array = array.split(" ").join("+");
                     
                     var link = 'https://www.yaddress.net/api/Address?AddressLine1='+ array[0] +'&AddressLine2=' + array[1]+ ','+ array[2] + '&UserKey=';
                     window.alert(link);
