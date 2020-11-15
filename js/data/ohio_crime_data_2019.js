@@ -1,896 +1,900 @@
 var ohCrime2019 = {
     "type": "FeaturesCollection",
     "countiesName":[
-    {
-        "county": "Allen", "crime": {
-        "murderAndNonnegligentManslaughter": 1,
-        "robbery": 15,
-        "aggravatedAssault": 9,
-        "propertyCrime": 803,
-        "burglary": 139,
-        "larcenyTheft": 637,
-        "motorVehicleTheft": 27,
-        "arson": 2}
-    },
-    {
-        "county": "Belmont","crime": { 
-        "violentCrime": 52,
-        "murderAndNonnegligentManslaughter": 2,
-        "rape": 19,
-        "robbery": 3,
-        "aggravatedAssault": 28,
-        "propertyCrime": 217,
-        "burglary": 41,
-        "larcenyTheft": 165,
-        "motorVehicleTheft": 11,
-        "arson": 2}
-    },
-    {
-        "county": "Clark","crime": { 
-        "violentCrime": 38,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 4,
-        "robbery": 9,
-        "aggravatedAssault": 25,
-        "propertyCrime": 630,
-        "burglary": 148,
-        "larcenyTheft": 470,
-        "motorVehicleTheft": 12,
-        "arson": 1}
-    },
-    {
-        "county": "Clermont","crime": { 
-        "violentCrime": 103,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 25,
-        "robbery": 8,
-        "aggravatedAssault": 70,
-        "propertyCrime": 948,
-        "burglary": 214,
-        "larcenyTheft": 671,
-        "motorVehicleTheft": 63,
-        "arson": 2}
-    },
-    {
-        "county": "Delaware","crime": { 
-        "violentCrime": 60,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 25,
-        "robbery": 6,
-        "aggravatedAssault": 29,
-        "propertyCrime": 1096,
-        "burglary": 174,
-        "larcenyTheft": 884,
-        "motorVehicleTheft": 38,
-        "arson": 1}
-    },
-    {
-        "county": "Fairfield","crime": { 
-        "violentCrime": 46,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 13,
-        "robbery": 6,
-        "aggravatedAssault": 27,
-        "propertyCrime": 1071,
-        "burglary": 149,
-        "larcenyTheft": 881,
-        "motorVehicleTheft": 41,
-        "arson": 3}
-    },
-    {
-        "county": "Fulton","crime": { 
-        "violentCrime": 15,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 4,
-        "robbery": 3,
-        "aggravatedAssault": 8,
-        "propertyCrime": 222,
-        "burglary": 59,
-        "larcenyTheft": 163,
-        "motorVehicleTheft": 0,
-        "arson": 0}
-    },
-    {
-        "county": "Geauga","crime": { 
-        "violentCrime": 21,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 3,
-        "robbery": 1,
-        "aggravatedAssault": 17,
-        "propertyCrime": 117,
-        "burglary": 23,
-        "larcenyTheft": 91,
-        "motorVehicleTheft": 3,
-        "arson": 2}
-    },
-    {
-        "county": "Greene","crime": { 
-        "violentCrime": 43,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 10,
-        "robbery": 2,
-        "aggravatedAssault": 31,
-        "propertyCrime": 306,
-        "burglary": 60,
-        "larcenyTheft": 230,
-        "motorVehicleTheft": 16,
-        "arson": 1}
-    },
-    {
-        "county": "Hamilton","crime": { 
-        "violentCrime": 168,
-        "murderAndNonnegligentManslaughter": 3,
-        "rape": 50,
-        "robbery": 31,
-        "aggravatedAssault": 84,
-        "propertyCrime": 1933,
-        "burglary": 232,
-        "larcenyTheft": 1535,
-        "motorVehicleTheft": 166,
-        "arson": 14}
-    },
-    {
-        "county": "Hocking","crime": { 
-        "violentCrime": 19,
-        "murderAndNonnegligentManslaughter": 4,
-        "rape": 2,
-        "robbery": 1,
-        "aggravatedAssault": 12,
-        "propertyCrime": 495,
-        "burglary": 112,
-        "larcenyTheft": 246,
-        "motorVehicleTheft": 137,
-        "arson": 3}
-    },
-    {
-        "county": "Jefferson","crime": { 
-        "violentCrime": 12,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 1,
-        "robbery": 0,
-        "aggravatedAssault": 11,
-        "propertyCrime": 75,
-        "burglary": 25,
-        "larcenyTheft": 43,
-        "motorVehicleTheft": 7,
-        "arson": 1}
-    },
-    {
-        "county": "Lake", "crime" :{
-        "murderAndNonnegligentManslaughter": 3,
-        "robbery": 5,
-        "aggravatedAssault": 182,
-        "propertyCrime": 305,
-        "burglary": 82,
-        "larcenyTheft": 218,
-        "motorVehicleTheft": 5,
-        "arson": 0}
-    },
-    {
-        "county": "Lawrence","crime": { 
-        "violentCrime": 56,
-        "murderAndNonnegligentManslaughter": 1,
-        "rape": 13,
-        "robbery": 4,
-        "aggravatedAssault": 38,
-        "propertyCrime": 510,
-        "burglary": 145,
-        "larcenyTheft": 315,
-        "motorVehicleTheft": 50,
-        "arson": 2}
-    },
-    {
-        "county": "Lorain","crime": { 
-        "violentCrime": 76,
-        "murderAndNonnegligentManslaughter": 2,
-        "rape": 18,
-        "robbery": 12,
-        "aggravatedAssault": 44,
-        "propertyCrime": 460,
-        "burglary": 164,
-        "larcenyTheft": 274,
-        "motorVehicleTheft": 22,
-        "arson": 5}
-    },
-    {
-        "county": "Lucas","crime": { 
-        "violentCrime": 104,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 31,
-        "robbery": 30,
-        "aggravatedAssault": 43,
-        "propertyCrime": 950,
-        "burglary": 155,
-        "larcenyTheft": 729,
-        "motorVehicleTheft": 66,
-        "arson": 4}
-    },
-    {
-        "county": "Madison","crime": { 
-        "violentCrime": 13,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 1,
-        "robbery": 4,
-        "aggravatedAssault": 8,
-        "propertyCrime": 334,
-        "burglary": 83,
-        "larcenyTheft": 234,
-        "motorVehicleTheft": 17,
-        "arson": 2}
-    },
-    {
-        "county": "Mahoning","crime": { 
-        "violentCrime": 4,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 1,
-        "robbery": 1,
-        "aggravatedAssault": 2,
-        "propertyCrime": 81,
-        "burglary": 5,
-        "larcenyTheft": 72,
-        "motorVehicleTheft": 4,
-        "arson": 0}
-    },
-    {
-        "county": "Medina","crime": { 
-        "violentCrime": 5,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 0,
-        "robbery": 1,
-        "aggravatedAssault": 4,
-        "propertyCrime": 86,
-        "burglary": 23,
-        "larcenyTheft": 63,
-        "motorVehicleTheft": 0,
-        "arson": 0}
-    },
-    {
-        "county": "Miami","crime": { 
-        "violentCrime": 35,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 11,
-        "robbery": 0,
-        "aggravatedAssault": 24,
-        "propertyCrime": 321,
-        "burglary": 78,
-        "larcenyTheft": 212,
-        "motorVehicleTheft": 31,
-        "arson": 8}
-    },
-    {
-        "county": "Montgomery","crime": { 
-        "violentCrime": 269,
-        "murderAndNonnegligentManslaughter": 7,
-        "rape": 42,
-        "robbery": 67,
-        "aggravatedAssault": 153,
-        "propertyCrime": 1266,
-        "burglary": 282,
-        "larcenyTheft": 663,
-        "motorVehicleTheft": 321,
-        "arson": 9}
-    },
-    {
-        "county": "Perry","crime": { 
-        "violentCrime": 6,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 2,
-        "robbery": 0,
-        "aggravatedAssault": 4,
-        "propertyCrime": 85,
-        "burglary": 32,
-        "larcenyTheft": 50,
-        "motorVehicleTheft": 3,
-        "arson": 0}
-    },
-    {
-        "county": "Pickaway","crime": { 
-        "violentCrime": 31,
-        "murderAndNonnegligentManslaughter": 1,
-        "rape": 9,
-        "robbery": 2,
-        "aggravatedAssault": 19,
-        "propertyCrime": 619,
-        "burglary": 145,
-        "larcenyTheft": 443,
-        "motorVehicleTheft": 31,
-        "arson": 4}
-    },
-    {
-        "county": "Portage", "crime":{
-        "murderAndNonnegligentManslaughter": 1,
-        "robbery": 13,
-        "aggravatedAssault": 337,
-        "propertyCrime": 991,
-        "burglary": 217,
-        "larcenyTheft": 731,
-        "motorVehicleTheft": 43,
-        "arson": 3}
-    },
-    {
-        "county": "Richland", "crime": { 
-        "violentCrime": 65,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 35,
-        "robbery": 9,
-        "aggravatedAssault": 21,
-        "propertyCrime": 748,
-        "burglary": 185,
-        "larcenyTheft": 507,
-        "motorVehicleTheft": 56,
-        "arson": 4}
-    },
-    {
-        "county": "Stark","crime": { 
-        "violentCrime": 116,
-        "murderAndNonnegligentManslaughter": 1,
-        "rape": 32,
-        "robbery": 26,
-        "aggravatedAssault": 57,
-        "propertyCrime": 1578,
-        "burglary": 422,
-        "larcenyTheft": 1057,
-        "motorVehicleTheft": 99,
-        "arson": 11}
-    },
-    {
-        "county": "Summit","crime": { 
-        "violentCrime": 70,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 26,
-        "robbery": 12,
-        "aggravatedAssault": 32,
-        "propertyCrime": 889,
-        "burglary": 129,
-        "larcenyTheft": 712,
-        "motorVehicleTheft": 48,
-        "arson": 3}
-    },
-    {
-        "county": "Trumbull","crime": { 
-        "violentCrime": 17,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 4,
-        "robbery": 2,
-        "aggravatedAssault": 11,
-        "propertyCrime": 201,
-        "burglary": 76,
-        "larcenyTheft": 119,
-        "motorVehicleTheft": 6,
-        "arson": 0}
-    },
-    {
-        "county": "Union","crime": { 
-        "violentCrime": 39,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 21,
-        "robbery": 1,
-        "aggravatedAssault": 17,
-        "propertyCrime": 181,
-        "burglary": 33,
-        "larcenyTheft": 133,
-        "motorVehicleTheft": 15,
-        "arson": 0}
-    },
-    {
-        "county": "Warren","crime": { 
-        "violentCrime": 51,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 10,
-        "robbery": 4,
-        "aggravatedAssault": 37,
-        "propertyCrime": 741,
-        "burglary": 96,
-        "larcenyTheft": 586,
-        "motorVehicleTheft": 59,
-        "arson": 1}
-    },
-    {
-        "county": "Wood","crime": { 
-        "violentCrime": 25,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 9,
-        "robbery": 2,
-        "aggravatedAssault": 14,
-        "propertyCrime": 362,
-        "burglary": 86,
-        "larcenyTheft": 261,
-        "motorVehicleTheft": 15,
-        "arson": 2}
-    },
-    {
-        "county": "Adams","crime": { 
-        "violentCrime": 11,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 5,
-        "robbery": 0,
-        "aggravatedAssault": 6,
-        "propertyCrime": 196,
-        "burglary": 79,
-        "larcenyTheft": 100,
-        "motorVehicleTheft": 17,
-        "arson": 2}
-    },
-    {
-        "county": "Ashland","crime": { 
-        "violentCrime": 18,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 13,
-        "robbery": 0,
-        "aggravatedAssault": 5,
-        "propertyCrime": 144,
-        "burglary": 47,
-        "larcenyTheft": 93,
-        "motorVehicleTheft": 4,
-        "arson": 3}
-    },
-    {
-        "county": "Ashtabula","crime": { 
-        "violentCrime": 45,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 6,
-        "robbery": 8,
-        "aggravatedAssault": 31,
-        "propertyCrime": 479,
-        "burglary": 113,
-        "larcenyTheft": 327,
-        "motorVehicleTheft": 39,
-        "arson": 1}
-    },
-    {
-        "county": "Athens","crime": { 
-        "violentCrime": 18,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 6,
-        "robbery": 3,
-        "aggravatedAssault": 9,
-        "propertyCrime": 308,
-        "burglary": 96,
-        "larcenyTheft": 186,
-        "motorVehicleTheft": 26,
-        "arson": 0}
-    },
-    {
-        "county": "Champaign","crime": { 
-        "violentCrime": 21,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 6,
-        "robbery": 0,
-        "aggravatedAssault": 15,
-        "propertyCrime": 167,
-        "burglary": 48,
-        "larcenyTheft": 112,
-        "motorVehicleTheft": 7,
-        "arson": 2}
-    },
-    {
-        "county": "Clinton","crime": { 
-        "violentCrime": 14,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 5,
-        "robbery": 0,
-        "aggravatedAssault": 9,
-        "propertyCrime": 112,
-        "burglary": 37,
-        "larcenyTheft": 63,
-        "motorVehicleTheft": 12,
-        "arson": 1}
-    },
-    {
-        "county": "Columbiana","crime": { 
-        "violentCrime": 28,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 4,
-        "robbery": 4,
-        "aggravatedAssault": 20,
-        "propertyCrime": 326,
-        "burglary": 90,
-        "larcenyTheft": 208,
-        "motorVehicleTheft": 28,
-        "arson": 4}
-    },
-    {
-        "county": "Coshocton","crime": { 
-        "violentCrime": 42,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 13,
-        "robbery": 2,
-        "aggravatedAssault": 27,
-        "propertyCrime": 389,
-        "burglary": 92,
-        "larcenyTheft": 263,
-        "motorVehicleTheft": 34,
-        "arson": 3}
-    },
-    {
-        "county": "Crawford","crime": { 
-        "violentCrime": 3,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 1,
-        "robbery": 0,
-        "aggravatedAssault": 2,
-        "propertyCrime": 102,
-        "burglary": 36,
-        "larcenyTheft": 59,
-        "motorVehicleTheft": 7,
-        "arson": 0}
-    },
-    {
-        "county": "Defiance","crime": { 
-        "violentCrime": 13,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 6,
-        "robbery": 0,
-        "aggravatedAssault": 7,
-        "propertyCrime": 122,
-        "burglary": 34,
-        "larcenyTheft": 85,
-        "motorVehicleTheft": 3,
-        "arson": 2}
-    },
-    {
-        "county": "Erie","crime": { 
-        "violentCrime": 5,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 0,
-        "robbery": 0,
-        "aggravatedAssault": 5,
-        "propertyCrime": 202,
-        "burglary": 45,
-        "larcenyTheft": 151,
-        "motorVehicleTheft": 6,
-        "arson": 0}
-    },
-    {
-        "county": "Fayette","crime": { 
-        "violentCrime": 39,
-        "murderAndNonnegligentManslaughter": 2,
-        "rape": 11,
-        "robbery": 7,
-        "aggravatedAssault": 19,
-        "propertyCrime": 388,
-        "burglary": 117,
-        "larcenyTheft": 252,
-        "motorVehicleTheft": 19,
-        "arson": 2}
-    },
-    {
-        "county": "Gallia","crime": { 
-        "violentCrime": 30,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 3,
-        "robbery": 2,
-        "aggravatedAssault": 25,
-        "propertyCrime": 369,
-        "burglary": 105,
-        "larcenyTheft": 238,
-        "motorVehicleTheft": 26,
-        "arson": 4}
-    },
-    {
-        "county": "Hancock","crime": { 
-        "violentCrime": 20,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 7,
-        "robbery": 3,
-        "aggravatedAssault": 10,
-        "propertyCrime": 156,
-        "burglary": 35,
-        "larcenyTheft": 113,
-        "motorVehicleTheft": 8,
-        "arson": 1}
-    },
-    {
-        "county": "Hardin","crime": { 
-        "violentCrime": 10,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 0,
-        "robbery": 3,
-        "aggravatedAssault": 7,
-        "propertyCrime": 89,
-        "burglary": 19,
-        "larcenyTheft": 67,
-        "motorVehicleTheft": 3,
-        "arson": 4}
-    },
-    {
-        "county": "Henry","crime": { 
-        "violentCrime": 15,
-        "murderAndNonnegligentManslaughter": 1,
-        "rape": 3,
-        "robbery": 0,
-        "aggravatedAssault": 11,
-        "propertyCrime": 122,
-        "burglary": 40,
-        "larcenyTheft": 75,
-        "motorVehicleTheft": 7,
-        "arson": 1}
-    },
-    {
-        "county": "Highland","crime": { 
-        "violentCrime": 20,
-        "murderAndNonnegligentManslaughter": 2,
-        "rape": 12,
-        "robbery": 2,
-        "aggravatedAssault": 4,
-        "propertyCrime": 271,
-        "burglary": 95,
-        "larcenyTheft": 157,
-        "motorVehicleTheft": 19,
-        "arson": 1}
-    },
-    {
-        "county": "Jackson","crime": { 
-        "violentCrime": 29,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 7,
-        "robbery": 3,
-        "aggravatedAssault": 19,
-        "propertyCrime": 230,
-        "burglary": 67,
-        "larcenyTheft": 143,
-        "motorVehicleTheft": 20,
-        "arson": 0}
-    },
-    {
-        "county": "Knox","crime": { 
-        "violentCrime": 51,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 21,
-        "robbery": 2,
-        "aggravatedAssault": 28,
-        "propertyCrime": 333,
-        "burglary": 94,
-        "larcenyTheft": 239,
-        "motorVehicleTheft": 0,
-        "arson": 1}
-    },
-    {
-        "county": "Logan","crime": { 
-        "violentCrime": 19,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 3,
-        "robbery": 1,
-        "aggravatedAssault": 15,
-        "propertyCrime": 176,
-        "burglary": 43,
-        "larcenyTheft": 119,
-        "motorVehicleTheft": 14,
-        "arson": 1}
-    },
-    {
-        "county": "Marion","crime": { 
-        "violentCrime": 36,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 16,
-        "robbery": 7,
-        "aggravatedAssault": 13,
-        "propertyCrime": 888,
-        "burglary": 122,
-        "larcenyTheft": 742,
-        "motorVehicleTheft": 24,
-        "arson": 2}
-    },
-    {
-        "county": "Meigs","crime": { 
-        "violentCrime": 17,
-        "murderAndNonnegligentManslaughter": 1,
-        "rape": 3,
-        "robbery": 1,
-        "aggravatedAssault": 12,
-        "propertyCrime": 217,
-        "burglary": 51,
-        "larcenyTheft": 133,
-        "motorVehicleTheft": 33,
-        "arson": 4}
-    },
-    {
-        "county": "Mercer","crime": { 
-        "violentCrime": 10,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 4,
-        "robbery": 0,
-        "aggravatedAssault": 6,
-        "propertyCrime": 82,
-        "burglary": 8,
-        "larcenyTheft": 73,
-        "motorVehicleTheft": 1,
-        "arson": 0}
-    },
-    {
-        "county": "Monroe","crime": { 
-        "violentCrime": 15,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 7,
-        "robbery": 0,
-        "aggravatedAssault": 8,
-        "propertyCrime": 44,
-        "burglary": 14,
-        "larcenyTheft": 23,
-        "motorVehicleTheft": 7,
-        "arson": 1}
-    },
-    {
-        "county": "Morgan","crime": { 
-        "violentCrime": 24,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 4,
-        "robbery": 0,
-        "aggravatedAssault": 20,
-        "propertyCrime": 138,
-        "burglary": 51,
-        "larcenyTheft": 77,
-        "motorVehicleTheft": 10,
-        "arson": 2}
-    },
-    {
-        "county": "Noble","crime": { 
-        "violentCrime": 1,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 1,
-        "robbery": 0,
-        "aggravatedAssault": 0,
-        "propertyCrime": 38,
-        "burglary": 12,
-        "larcenyTheft": 25,
-        "motorVehicleTheft": 1,
-        "arson": 0}
-    },
-    {
-        "county": "Pike","crime": { 
-        "violentCrime": 37,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 12,
-        "robbery": 2,
-        "aggravatedAssault": 23,
-        "propertyCrime": 380,
-        "burglary": 101,
-        "larcenyTheft": 231,
-        "motorVehicleTheft": 48,
-        "arson": 5}
-    },
-    {
-        "county": "Preble","crime": { 
-        "violentCrime": 14,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 2,
-        "robbery": 0,
-        "aggravatedAssault": 12,
-        "propertyCrime": 207,
-        "burglary": 38,
-        "larcenyTheft": 135,
-        "motorVehicleTheft": 34,
-        "arson": 1}
-    },
-    {
-        "county": "Putnam","crime": { 
-        "violentCrime": 10,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 1,
-        "robbery": 0,
-        "aggravatedAssault": 9,
-        "propertyCrime": 75,
-        "burglary": 10,
-        "larcenyTheft": 65,
-        "motorVehicleTheft": 0,
-        "arson": 0}
-    },
-    {
-        "county": "Ross","crime": { 
-        "violentCrime": 114,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 31,
-        "robbery": 3,
-        "aggravatedAssault": 80,
-        "propertyCrime": 1071,
-        "burglary": 270,
-        "larcenyTheft": 676,
-        "motorVehicleTheft": 125,
-        "arson": 17}
-    },
-    {
-        "county": "Scioto","crime": { 
-        "violentCrime": 58,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 12,
-        "robbery": 13,
-        "aggravatedAssault": 33,
-        "propertyCrime": 882,
-        "burglary": 240,
-        "larcenyTheft": 539,
-        "motorVehicleTheft": 103,
-        "arson": 14}
-    },
-    {
-        "county": "Shelby","crime": { 
-        "violentCrime": 14,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 6,
-        "robbery": 1,
-        "aggravatedAssault": 7,
-        "propertyCrime": 120,
-        "burglary": 14,
-        "larcenyTheft": 96,
-        "motorVehicleTheft": 10,
-        "arson": 0}
-    },
-    {
-        "county": "Tuscarawas","crime": { 
-        "violentCrime": 18,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 7,
-        "robbery": 1,
-        "aggravatedAssault": 10,
-        "propertyCrime": 284,
-        "burglary": 68,
-        "larcenyTheft": 193,
-        "motorVehicleTheft": 23,
-        "arson": 2}
-    },
-    {
-        "county": "Van Wert","crime": { 
-        "violentCrime": 25,
-        "murderAndNonnegligentManslaughter": 1,
-        "rape": 7,
-        "robbery": 0,
-        "aggravatedAssault": 17,
-        "propertyCrime": 105,
-        "burglary": 36,
-        "larcenyTheft": 61,
-        "motorVehicleTheft": 8,
-        "arson": 1}
-    },
-    {
-        "county": "Vinton","crime": { 
-        "violentCrime": 20,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 1,
-        "robbery": 2,
-        "aggravatedAssault": 17,
-        "propertyCrime": 192,
-        "burglary": 72,
-        "larcenyTheft": 101,
-        "motorVehicleTheft": 19,
-        "arson": 0}
-    },
-    {
-        "county": "Washington","crime": { 
-        "violentCrime": 31,
-        "murderAndNonnegligentManslaughter": 0,
-        "rape": 15,
-        "robbery": 1,
-        "aggravatedAssault": 15,
-        "propertyCrime": 273,
-        "burglary": 89,
-        "larcenyTheft": 165,
-        "motorVehicleTheft": 19,
-        "arson": 2}
-    },
-    {
-        "county": "Wayne","crime": { 
-        "violentCrime": 46,
-        "murderAndNonnegligentManslaughter": 1,
-        "rape": 13,
-        "robbery": 2,
-        "aggravatedAssault": 30,
-        "propertyCrime": 478,
-        "burglary": 149,
-        "larcenyTheft": 281,
-        "motorVehicleTheft": 48,
-        "arson": 3}
-    },
-    {
-        "county": "Wyandot","crime": { 
-        "violentCrime": 3,
-        "murderAndNonnegligentManslaughter": 1,
-        "rape": 0,
-        "robbery": 0,
-        "aggravatedAssault": 2,
-        "propertyCrime": 1,
-        "burglary": 0,
-        "larcenyTheft": 1,
-        "motorVehicleTheft": 0,
-        "arson": 1}
-    }
-]
-}``
+        {
+            "county": "Allen","crime":{
+            "violentCrime": 38,
+            "murderAndNonnegligentManslaughter": 1,
+            "rape": 14,
+            "robbery": 13,
+            "aggravatedAssault": 10,
+            "propertyCrime": 582,
+            "burglary": 115,
+            "larcenyTheft": 437,
+            "motorVehicleTheft": 30,
+            "arson": 4}
+        },
+        {
+            "county": "Belmont","crime":{
+            "violentCrime": 42,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 12,
+            "robbery": 3,
+            "aggravatedAssault": 27,
+            "propertyCrime": 205,
+            "burglary": 35,
+            "larcenyTheft": 151,
+            "motorVehicleTheft": 19,
+            "arson": 2}
+        },
+        {
+            "county": "Carroll","crime":{
+            "violentCrime": 2,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 0,
+            "robbery": 0,
+            "aggravatedAssault": 2,
+            "propertyCrime": 71,
+            "burglary": 21,
+            "larcenyTheft": 41,
+            "motorVehicleTheft": 9,
+            "arson": 0}
+        },
+        {
+            "county": "Clermont","crime":{
+            "violentCrime": 111,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 23,
+            "robbery": 3,
+            "aggravatedAssault": 85,
+            "propertyCrime": 897,
+            "burglary": 269,
+            "larcenyTheft": 582,
+            "motorVehicleTheft": 46,
+            "arson": 1}
+        },
+        {
+            "county": "Fairfield","crime":{
+            "violentCrime": 52,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 14,
+            "robbery": 5,
+            "aggravatedAssault": 33,
+            "propertyCrime": 1039,
+            "burglary": 139,
+            "larcenyTheft": 855,
+            "motorVehicleTheft": 45,
+            "arson": 2}
+        },
+        {
+            "county": "Fulton","crime":{
+            "violentCrime": 14,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 5,
+            "robbery": 2,
+            "aggravatedAssault": 7,
+            "propertyCrime": 167,
+            "burglary": 32,
+            "larcenyTheft": 132,
+            "motorVehicleTheft": 3,
+            "arson": 1}
+        },
+        {
+            "county": "Geauga","crime":{
+            "violentCrime": 10,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 6,
+            "robbery": 1,
+            "aggravatedAssault": 3,
+            "propertyCrime": 134,
+            "burglary": 28,
+            "larcenyTheft": 94,
+            "motorVehicleTheft": 12,
+            "arson": 0}
+        },
+        {
+            "county": "Greene","crime":{
+            "violentCrime": 36,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 12,
+            "robbery": 4,
+            "aggravatedAssault": 20,
+            "propertyCrime": 348,
+            "burglary": 86,
+            "larcenyTheft": 240,
+            "motorVehicleTheft": 22,
+            "arson": 3}
+        },
+        {
+            "county": "Hamilton","crime":{
+            "violentCrime": 176,
+            "murderAndNonnegligentManslaughter": 4,
+            "rape": 69,
+            "robbery": 22,
+            "aggravatedAssault": 81,
+            "propertyCrime": 2025,
+            "burglary": 235,
+            "larcenyTheft": 1621,
+            "motorVehicleTheft": 169,
+            "arson": 13}
+        },
+        {
+            "county": "Hocking","crime":{
+            "violentCrime": 28,
+            "murderAndNonnegligentManslaughter": 4,
+            "rape": 6,
+            "robbery": 2,
+            "aggravatedAssault": 16,
+            "propertyCrime": 346,
+            "burglary": 108,
+            "larcenyTheft": 210,
+            "motorVehicleTheft": 28,
+            "arson": 3}
+        },
+        {
+            "county": "Jefferson","crime":{
+            "violentCrime": 10,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 1,
+            "robbery": 0,
+            "aggravatedAssault": 9,
+            "propertyCrime": 44,
+            "burglary": 10,
+            "larcenyTheft": 33,
+            "motorVehicleTheft": 1,
+            "arson": 1}
+        },
+        {
+            "county": "Lawrence","crime":{
+            "violentCrime": 65,
+            "murderAndNonnegligentManslaughter": 2,
+            "rape": 18,
+            "robbery": 6,
+            "aggravatedAssault": 39,
+            "propertyCrime": 446,
+            "burglary": 112,
+            "larcenyTheft": 303,
+            "motorVehicleTheft": 31,
+            "arson": 4}
+        },
+        {
+            "county": "Licking","crime":{
+            "violentCrime": 53,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 16,
+            "robbery": 3,
+            "aggravatedAssault": 34,
+            "propertyCrime": 793,
+            "burglary": 179,
+            "larcenyTheft": 555,
+            "motorVehicleTheft": 59,
+            "arson": 1}
+        },
+        {
+            "county": "Lorain","crime":{
+            "violentCrime": 60,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 16,
+            "robbery": 9,
+            "aggravatedAssault": 35,
+            "propertyCrime": 509,
+            "burglary": 167,
+            "larcenyTheft": 323,
+            "motorVehicleTheft": 19,
+            "arson": 1}
+        },
+        {
+            "county": "Lucas","crime":{
+            "violentCrime": 93,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 8,
+            "robbery": 18,
+            "aggravatedAssault": 67,
+            "propertyCrime": 801,
+            "burglary": 110,
+            "larcenyTheft": 640,
+            "motorVehicleTheft": 51,
+            "arson": 1}
+        },
+        {
+            "county": "Madison","crime":{
+            "violentCrime": 20,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 12,
+            "robbery": 2,
+            "aggravatedAssault": 6,
+            "propertyCrime": 264,
+            "burglary": 56,
+            "larcenyTheft": 183,
+            "motorVehicleTheft": 25,
+            "arson": 2}
+        },
+        {
+            "county": "Mahoning","crime":{
+            "violentCrime": 1,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 1,
+            "robbery": 0,
+            "aggravatedAssault": 0,
+            "propertyCrime": 57,
+            "burglary": 8,
+            "larcenyTheft": 44,
+            "motorVehicleTheft": 5,
+            "arson": 0}
+        },
+        {
+            "county": "Medina","crime":{
+            "violentCrime": 11,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 4,
+            "robbery": 0,
+            "aggravatedAssault": 7,
+            "propertyCrime": 166,
+            "burglary": 98,
+            "larcenyTheft": 64,
+            "motorVehicleTheft": 4,
+            "arson": 0}
+        },
+        {
+            "county": "Miami","crime":{
+            "violentCrime": 38,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 10,
+            "robbery": 2,
+            "aggravatedAssault": 26,
+            "propertyCrime": 280,
+            "burglary": 98,
+            "larcenyTheft": 166,
+            "motorVehicleTheft": 16,
+            "arson": 4}
+        },
+        {
+            "county": "Montgomery","crime":{
+            "violentCrime": 279,
+            "murderAndNonnegligentManslaughter": 3,
+            "rape": 43,
+            "robbery": 76,
+            "aggravatedAssault": 157,
+            "propertyCrime": 1051,
+            "burglary": 288,
+            "larcenyTheft": 615,
+            "motorVehicleTheft": 148,
+            "arson": 17}
+        },
+        {
+            "county": "Perry","crime":{
+            "violentCrime": 13,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 7,
+            "robbery": 2,
+            "aggravatedAssault": 4,
+            "propertyCrime": 124,
+            "burglary": 38,
+            "larcenyTheft": 75,
+            "motorVehicleTheft": 11,
+            "arson": 1}
+        },
+        {
+            "county": "Pickaway","crime":{
+            "violentCrime": 22,
+            "murderAndNonnegligentManslaughter": 1,
+            "rape": 1,
+            "robbery": 3,
+            "aggravatedAssault": 17,
+            "propertyCrime": 546,
+            "burglary": 130,
+            "larcenyTheft": 386,
+            "motorVehicleTheft": 30,
+            "arson": 5}
+        },
+        {
+            "county": "Portage2", "crime": {
+            "murderAndNonnegligentManslaughter": 1,
+            "robbery": 39,
+            "aggravatedAssault": 304,
+            "propertyCrime": 916,
+            "burglary": 190,
+            "larcenyTheft": 688,
+            "motorVehicleTheft": 38,
+            "arson": 4}
+        },
+        {
+            "county": "Richland","crime":{
+            "violentCrime": 61,
+            "murderAndNonnegligentManslaughter": 1,
+            "rape": 34,
+            "robbery": 6,
+            "aggravatedAssault": 20,
+            "propertyCrime": 757,
+            "burglary": 166,
+            "larcenyTheft": 562,
+            "motorVehicleTheft": 29,
+            "arson": 1}
+        },
+        {
+            "county": "Stark","crime":{
+            "violentCrime": 107,
+            "murderAndNonnegligentManslaughter": 2,
+            "rape": 36,
+            "robbery": 10,
+            "aggravatedAssault": 59,
+            "propertyCrime": 1544,
+            "burglary": 401,
+            "larcenyTheft": 1019,
+            "motorVehicleTheft": 124,
+            "arson": 12}
+        },
+        {
+            "county": "Summit","crime":{
+            "violentCrime": 80,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 22,
+            "robbery": 14,
+            "aggravatedAssault": 44,
+            "propertyCrime": 944,
+            "burglary": 176,
+            "larcenyTheft": 705,
+            "motorVehicleTheft": 63,
+            "arson": 3}
+        },
+        {
+            "county": "Union","crime":{
+            "violentCrime": 21,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 3,
+            "robbery": 2,
+            "aggravatedAssault": 16,
+            "propertyCrime": 126,
+            "burglary": 28,
+            "larcenyTheft": 86,
+            "motorVehicleTheft": 12,
+            "arson": 1}
+        },
+        {
+            "county": "Wood","crime":{
+            "violentCrime": 13,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 6,
+            "robbery": 0,
+            "aggravatedAssault": 7,
+            "propertyCrime": 301,
+            "burglary": 42,
+            "larcenyTheft": 240,
+            "motorVehicleTheft": 19,
+            "arson": 0}
+        },
+        {
+            "county": "Adams","crime":{
+            "violentCrime": 8,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 3,
+            "robbery": 1,
+            "aggravatedAssault": 4,
+            "propertyCrime": 186,
+            "burglary": 45,
+            "larcenyTheft": 119,
+            "motorVehicleTheft": 22,
+            "arson": 2}
+        },
+        {
+            "county": "Ashland","crime":{
+            "violentCrime": 37,
+            "murderAndNonnegligentManslaughter": 1,
+            "rape": 23,
+            "robbery": 0,
+            "aggravatedAssault": 13,
+            "propertyCrime": 103,
+            "burglary": 25,
+            "larcenyTheft": 74,
+            "motorVehicleTheft": 4,
+            "arson": 0}
+        },
+        {
+            "county": "Ashtabula","crime":{
+            "violentCrime": 32,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 2,
+            "robbery": 3,
+            "aggravatedAssault": 27,
+            "propertyCrime": 457,
+            "burglary": 104,
+            "larcenyTheft": 320,
+            "motorVehicleTheft": 33,
+            "arson": 1}
+        },
+        {
+            "county": "Auglaize","crime":{
+            "violentCrime": 3,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 1,
+            "robbery": 0,
+            "aggravatedAssault": 2,
+            "propertyCrime": 45,
+            "burglary": 10,
+            "larcenyTheft": 31,
+            "motorVehicleTheft": 4,
+            "arson": 0}
+        },
+        {
+            "county": "Champaign","crime":{
+            "violentCrime": 25,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 4,
+            "robbery": 0,
+            "aggravatedAssault": 21,
+            "propertyCrime": 153,
+            "burglary": 39,
+            "larcenyTheft": 102,
+            "motorVehicleTheft": 12,
+            "arson": 0}
+        },
+        {
+            "county": "Columbiana","crime":{
+            "violentCrime": 37,
+            "murderAndNonnegligentManslaughter": 1,
+            "rape": 15,
+            "robbery": 1,
+            "aggravatedAssault": 20,
+            "propertyCrime": 315,
+            "burglary": 63,
+            "larcenyTheft": 222,
+            "motorVehicleTheft": 30,
+            "arson": 3}
+        },
+        {
+            "county": "Coshocton","crime":{
+            "violentCrime": 40,
+            "murderAndNonnegligentManslaughter": 4,
+            "rape": 15,
+            "robbery": 1,
+            "aggravatedAssault": 20,
+            "propertyCrime": 345,
+            "burglary": 73,
+            "larcenyTheft": 244,
+            "motorVehicleTheft": 28,
+            "arson": 11}
+        },
+        {
+            "county": "Crawford","crime":{
+            "violentCrime": 3,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 1,
+            "robbery": 0,
+            "aggravatedAssault": 2,
+            "propertyCrime": 92,
+            "burglary": 32,
+            "larcenyTheft": 58,
+            "motorVehicleTheft": 2,
+            "arson": 0}
+        },
+        {
+            "county": "Defiance","crime":{
+            "violentCrime": 14,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 6,
+            "robbery": 1,
+            "aggravatedAssault": 7,
+            "propertyCrime": 117,
+            "burglary": 25,
+            "larcenyTheft": 90,
+            "motorVehicleTheft": 2,
+            "arson": 1}
+        },
+        {
+            "county": "Erie","crime":{
+            "violentCrime": 1,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 0,
+            "robbery": 0,
+            "aggravatedAssault": 1,
+            "propertyCrime": 189,
+            "burglary": 40,
+            "larcenyTheft": 144,
+            "motorVehicleTheft": 5,
+            "arson": 1}
+        },
+        {
+            "county": "Fayette","crime":{
+            "violentCrime": 19,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 8,
+            "robbery": 4,
+            "aggravatedAssault": 7,
+            "propertyCrime": 307,
+            "burglary": 76,
+            "larcenyTheft": 219,
+            "motorVehicleTheft": 12,
+            "arson": 2}
+        },
+        {
+            "county": "Gallia","crime":{
+            "violentCrime": 32,
+            "murderAndNonnegligentManslaughter": 1,
+            "rape": 9,
+            "robbery": 0,
+            "aggravatedAssault": 22,
+            "propertyCrime": 294,
+            "burglary": 77,
+            "larcenyTheft": 192,
+            "motorVehicleTheft": 25,
+            "arson": 2}
+        },
+        {
+            "county": "Hancock","crime":{
+            "violentCrime": 14,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 4,
+            "robbery": 1,
+            "aggravatedAssault": 9,
+            "propertyCrime": 127,
+            "burglary": 31,
+            "larcenyTheft": 91,
+            "motorVehicleTheft": 5,
+            "arson": 1}
+        },
+        {
+            "county": "Hardin","crime":{
+            "violentCrime": 13,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 2,
+            "robbery": 0,
+            "aggravatedAssault": 11,
+            "propertyCrime": 68,
+            "burglary": 22,
+            "larcenyTheft": 42,
+            "motorVehicleTheft": 4,
+            "arson": 1}
+        },
+        {
+            "county": "Henry","crime":{
+            "violentCrime": 13,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 3,
+            "robbery": 1,
+            "aggravatedAssault": 9,
+            "propertyCrime": 109,
+            "burglary": 36,
+            "larcenyTheft": 64,
+            "motorVehicleTheft": 9,
+            "arson": 0}
+        },
+        {
+            "county": "Highland","crime":{
+            "violentCrime": 38,
+            "murderAndNonnegligentManslaughter": 4,
+            "rape": 17,
+            "robbery": 3,
+            "aggravatedAssault": 14,
+            "propertyCrime": 305,
+            "burglary": 91,
+            "larcenyTheft": 199,
+            "motorVehicleTheft": 15,
+            "arson": 0}
+        },
+        {
+            "county": "Jackson","crime":{
+            "violentCrime": 26,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 14,
+            "robbery": 1,
+            "aggravatedAssault": 11,
+            "propertyCrime": 229,
+            "burglary": 82,
+            "larcenyTheft": 125,
+            "motorVehicleTheft": 22,
+            "arson": 1}
+        },
+        {
+            "county": "Knox","crime":{
+            "violentCrime": 56,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 21,
+            "robbery": 2,
+            "aggravatedAssault": 33,
+            "propertyCrime": 330,
+            "burglary": 58,
+            "larcenyTheft": 272,
+            "motorVehicleTheft": 0,
+            "arson": 4}
+        },
+        {
+            "county": "Logan","crime":{
+            "violentCrime": 31,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 8,
+            "robbery": 1,
+            "aggravatedAssault": 22,
+            "propertyCrime": 171,
+            "burglary": 45,
+            "larcenyTheft": 114,
+            "motorVehicleTheft": 12,
+            "arson": 0}
+        },
+        {
+            "county": "Marion","crime":{
+            "violentCrime": 38,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 13,
+            "robbery": 2,
+            "aggravatedAssault": 23,
+            "propertyCrime": 935,
+            "burglary": 136,
+            "larcenyTheft": 763,
+            "motorVehicleTheft": 36,
+            "arson": 4}
+        },
+        {
+            "county": "Meigs","crime":{
+            "violentCrime": 16,
+            "murderAndNonnegligentManslaughter": 1,
+            "rape": 1,
+            "robbery": 1,
+            "aggravatedAssault": 13,
+            "propertyCrime": 230,
+            "burglary": 76,
+            "larcenyTheft": 125,
+            "motorVehicleTheft": 29,
+            "arson": 0}
+        },
+        {
+            "county": "Monroe","crime":{
+            "violentCrime": 12,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 3,
+            "robbery": 0,
+            "aggravatedAssault": 9,
+            "propertyCrime": 64,
+            "burglary": 36,
+            "larcenyTheft": 24,
+            "motorVehicleTheft": 4,
+            "arson": 0}
+        },
+        {
+            "county": "Morgan","crime":{
+            "violentCrime": 29,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 2,
+            "robbery": 1,
+            "aggravatedAssault": 26,
+            "propertyCrime": 80,
+            "burglary": 22,
+            "larcenyTheft": 47,
+            "motorVehicleTheft": 11,
+            "arson": 0}
+        },
+        {
+            "county": "Noble","crime":{
+            "violentCrime": 5,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 3,
+            "robbery": 0,
+            "aggravatedAssault": 2,
+            "propertyCrime": 36,
+            "burglary": 7,
+            "larcenyTheft": 27,
+            "motorVehicleTheft": 2,
+            "arson": 0}
+        },
+        {
+            "county": "Paulding","crime":{
+            "violentCrime": 30,
+            "murderAndNonnegligentManslaughter": 1,
+            "rape": 1,
+            "robbery": 0,
+            "aggravatedAssault": 28,
+            "propertyCrime": 104,
+            "burglary": 23,
+            "larcenyTheft": 80,
+            "motorVehicleTheft": 1,
+            "arson": 0}
+        },
+        {
+            "county": "Pike","crime":{
+            "violentCrime": 33,
+            "murderAndNonnegligentManslaughter": 3,
+            "rape": 7,
+            "robbery": 1,
+            "aggravatedAssault": 22,
+            "propertyCrime": 464,
+            "burglary": 93,
+            "larcenyTheft": 270,
+            "motorVehicleTheft": 101,
+            "arson": 5}
+        },
+        {
+            "county": "Putnam","crime":{
+            "violentCrime": 15,
+            "murderAndNonnegligentManslaughter": 1,
+            "rape": 9,
+            "robbery": 2,
+            "aggravatedAssault": 3,
+            "propertyCrime": 90,
+            "burglary": 19,
+            "larcenyTheft": 66,
+            "motorVehicleTheft": 5,
+            "arson": 0}
+        },
+        {
+            "county": "Ross","crime":{
+            "violentCrime": 114,
+            "murderAndNonnegligentManslaughter": 3,
+            "rape": 33,
+            "robbery": 5,
+            "aggravatedAssault": 73,
+            "propertyCrime": 1041,
+            "burglary": 285,
+            "larcenyTheft": 631,
+            "motorVehicleTheft": 125,
+            "arson": 12}
+        },
+        {
+            "county": "Scioto","crime":{
+            "violentCrime": 48,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 12,
+            "robbery": 7,
+            "aggravatedAssault": 29,
+            "propertyCrime": 633,
+            "burglary": 177,
+            "larcenyTheft": 394,
+            "motorVehicleTheft": 62,
+            "arson": 6}
+        },
+        {
+            "county": "Shelby","crime":{
+            "violentCrime": 12,
+            "murderAndNonnegligentManslaughter": 1,
+            "rape": 1,
+            "robbery": 1,
+            "aggravatedAssault": 9,
+            "propertyCrime": 131,
+            "burglary": 27,
+            "larcenyTheft": 97,
+            "motorVehicleTheft": 7,
+            "arson": 2}
+        },
+        {
+            "county": "Tuscarawas","crime":{
+            "violentCrime": 22,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 9,
+            "robbery": 1,
+            "aggravatedAssault": 12,
+            "propertyCrime": 241,
+            "burglary": 83,
+            "larcenyTheft": 130,
+            "motorVehicleTheft": 28,
+            "arson": 3}
+        },
+        {
+            "county": "Van Wert","crime":{
+            "violentCrime": 16,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 6,
+            "robbery": 0,
+            "aggravatedAssault": 10,
+            "propertyCrime": 106,
+            "burglary": 40,
+            "larcenyTheft": 60,
+            "motorVehicleTheft": 6,
+            "arson": 1}
+        },
+        {
+            "county": "Vinton","crime":{
+            "violentCrime": 10,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 1,
+            "robbery": 0,
+            "aggravatedAssault": 9,
+            "propertyCrime": 78,
+            "burglary": 23,
+            "larcenyTheft": 43,
+            "motorVehicleTheft": 12,
+            "arson": 0}
+        },
+        {
+            "county": "Washington","crime":{
+            "violentCrime": 34,
+            "murderAndNonnegligentManslaughter": 4,
+            "rape": 8,
+            "robbery": 3,
+            "aggravatedAssault": 19,
+            "propertyCrime": 172,
+            "burglary": 51,
+            "larcenyTheft": 102,
+            "motorVehicleTheft": 19,
+            "arson": 0}
+        },
+        {
+            "county": "Wayne","crime":{
+            "violentCrime": 44,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 14,
+            "robbery": 5,
+            "aggravatedAssault": 25,
+            "propertyCrime": 473,
+            "burglary": 164,
+            "larcenyTheft": 277,
+            "motorVehicleTheft": 32,
+            "arson": 1}
+        },
+        {
+            "county": "Wyandot","crime":{
+            "violentCrime": 3,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 0,
+            "robbery": 0,
+            "aggravatedAssault": 3,
+            "propertyCrime": 3,
+            "burglary": 2,
+            "larcenyTheft": 0,
+            "motorVehicleTheft": 1,
+            "arson": 0}
+        },
+        {
+            "county": "Van Wert","crime":{
+            "violentCrime": 25,
+            "murderAndNonnegligentManslaughter": 1,
+            "rape": 7,
+            "robbery": 0,
+            "aggravatedAssault": 17,
+            "propertyCrime": 105,
+            "burglary": 36,
+            "larcenyTheft": 61,
+            "motorVehicleTheft": 8,
+            "arson": 1}
+        },
+        {
+            "county": "Vinton","crime":{
+            "violentCrime": 20,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 1,
+            "robbery": 2,
+            "aggravatedAssault": 17,
+            "propertyCrime": 192,
+            "burglary": 72,
+            "larcenyTheft": 101,
+            "motorVehicleTheft": 19,
+            "arson": 0}
+        },
+        {
+            "county": "Washington","crime":{
+            "violentCrime": 31,
+            "murderAndNonnegligentManslaughter": 0,
+            "rape": 15,
+            "robbery": 1,
+            "aggravatedAssault": 15,
+            "propertyCrime": 273,
+            "burglary": 89,
+            "larcenyTheft": 165,
+            "motorVehicleTheft": 19,
+            "arson": 2}
+        },
+        {
+            "county": "Wayne","crime":{
+            "violentCrime": 46,
+            "murderAndNonnegligentManslaughter": 1,
+            "rape": 13,
+            "robbery": 2,
+            "aggravatedAssault": 30,
+            "propertyCrime": 478,
+            "burglary": 149,
+            "larcenyTheft": 281,
+            "motorVehicleTheft": 48,
+            "arson": 3}
+        },
+        {
+            "county": "Wyandot","crime":{
+            "violentCrime": 3,
+            "murderAndNonnegligentManslaughter": 1,
+            "rape": 0,
+            "robbery": 0,
+            "aggravatedAssault": 2,
+            "propertyCrime": 1,
+            "burglary": 0,
+            "larcenyTheft": 1,
+            "motorVehicleTheft": 0,
+            "arson": 1}
+        }
+    ]
+}
