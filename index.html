@@ -38,7 +38,7 @@
                     }
                     var array = address.split(",");
                     
-                    var link = 'https://www.yaddress.net/api/Address?AddressLine1='+ array[0] +'&AddressLine2=' + array[1]+ array[2] + '&UserKey=';
+                    var link = 'https://www.yaddress.net/api/Address?AddressLine1='+ array[0] +'&AddressLine2=' + array[1]+ ','+ array[2] + '&UserKey=';
                     window.alert(link);
                     $.get(link,null,countyGet(data,status,xhr),"json");
                     
