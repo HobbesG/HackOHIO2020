@@ -3,22 +3,32 @@
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
         <script type="text/javascript">
             $(document).ready(function () {
-  $("#showModal").click(function() {
-  $(".modal").addClass("is-active");
-      $('#mapid').css("visibility", "hidden");
-  });
+                $("#showModal").click(function() {
+                    $("#pref").addClass("is-active");
+                    $('#mapid').css("visibility", "hidden");
+                });
+                
+                $("#instructionsModal").click(function() {
+                    $("#instr").addClass("is-active");
+                    $('#mapid').css("visibility", "hidden");
+                });
 
-$("#modal-close").click(function() {
-   $(".modal").removeClass("is-active");
-    $('#mapid').css("visibility", "visible");
-});
+                $("#hideModal").click(function() {
+                    $("#pref").removeClass("is-active");
+                    $('#mapid').css("visibility", "visible");
+                });
+                
+                $("#hideInstrModal").click(function() {
+                    $("#instr").removeClass("is-active");
+                    $('#mapid').css("visibility", "visible");
+                });
+                
                 var dropdown = document.querySelector('.dropdown');
-dropdown.addEventListener('click', function(event) {
-  event.stopPropagation();
-  dropdown.classList.toggle('is-active');
-});
-});
-
+                dropdown.addEventListener('click', function(event) {
+                    event.stopPropagation();
+                    dropdown.classList.toggle('is-active');
+                });
+            });
         </script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
@@ -28,7 +38,6 @@ dropdown.addEventListener('click', function(event) {
 		<link rel="stylesheet" href="css/bulma.css">
 		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 		<script src="js/script.js"></script>
-        
         <style>
             #mapid { margin: auto; height: 60%; width: 95%; }
         </style>
@@ -37,7 +46,7 @@ dropdown.addEventListener('click', function(event) {
 	<body>
         <!-- NAVIGATION BAR -->
         <center>
-            <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+            <nav class="navbar is-dark" role="navigation" aria-label="main">
                 <div class="navbar-brand">
                     <a class="navbar-item" href="https://hack.osu.edu/2020">
                         <img src="img\hack-logo.svg" width="50" height="28">
@@ -101,41 +110,11 @@ dropdown.addEventListener('click', function(event) {
                     <div class="box">
                         <div id="mapid"></div>
                         <center>
-                            <!-- BUTTONS -->
                             <br>
-                            <button class="button is-info is-light">How to Use</button>
-                            <button class="button is-success is-light">Add Location</button>
-                            <button class="button is-warning is-light" id="showModal">Your Preferences</button>
-                            <div class="dropdown">
-  <div class="dropdown-trigger">
-    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
-      <span>Highlight Counties</span>
-      <span class="icon is-small">
-        <i class="fas fa-angle-down" aria-hidden="true"></i>
-      </span>
-    </button>
-  </div>
-  <div class="dropdown-menu" id="dropdown-menu3" role="menu">
-    <div class="dropdown-content">
-      <a href="#" class="dropdown-item">
-        Crime Rate
-      </a>
-      <a href="#" class="dropdown-item">
-        Population Density
-      </a>
-      <a href="#" class="dropdown-item">
-        Average Temperature
-      </a>
-      <a href="#" class="dropdown-item">
-        Voting History
-      </a>
-      <hr class="dropdown-divider">
-      <a href="#" class="dropdown-item">
-        Disable Color Key
-      </a>
-    </div>
-  </div>
-</div>
+                            <!-- BUTTONS -->
+                            <button class="button is-info is-light" id="instructionsModal">How to Use</button>
+                            <button class="button is-success is-light" id="addLocation">Add Location</button>
+                            <button class="button is-warning is-light" id="showModal">Preferences</button>
                         </center>
                     </div>
                 </div>
@@ -149,16 +128,64 @@ dropdown.addEventListener('click', function(event) {
             
             <script>script();</script>
             
-            <div class="modal">
+            <!-- INSTRUCTIONS -->
+            <div class="modal" id="instr">
                 <div class="modal-background"></div>
                 <div class="modal-card">
                     <header class="modal-card-head">
-                        <p class="modal-card-title">Your Preferences</p>
+                        <p class="modal-card-title">Usage Instructions</p>
                     </header>
                     <section class="modal-card-body">
-                        <p class="title is-4">What's important?</p>
-                        <p class="subtitle is-6">Help us make a better choice for you and your property<br>
-                            Rate the following concerns to let us know what matters the most<br><br>
+                        <b>Map Controls</b>
+                        <div class="content">
+                            <ul>
+                                <li>Hold the left mouse button and drag your cursor to move the map</li>
+                                <li>Use the scroll wheel or the <b>+</b>/<b>-</b> buttons in the top left to adjust the zoom</li>
+                                <li>Left-click on the location of interest and select <span class="tag is-success is-light">Add Location</span></li>
+                                <li>Adjust map coloring by changing <b>Key</b> to your desired statistic in <span class="tag is-warning is-light">Preferences</span></li>
+                            </ul>
+                        </div>
+                        <b>Analysis Table</b>
+                        <div class="content">
+                            <ul>
+                                <li>Once you add a location, the table will display all of its available statistics</li>
+                                <li>You can add as many locations as you wish to compare</li>
+                                <li>The table determines the "best" added location based on your <span class="tag is-warning is-light">Preferences</span></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <footer class="modal-card-foot">
+                    <button class="button is-success" id="hideInstrModal">Got it</button>
+                    </footer>
+                </div>
+            </div>
+            
+            <!-- USER PREFERENCES -->
+            <div class="modal" id="pref">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Preferences</p>
+                    </header>
+                    <section class="modal-card-body">
+                        <p class="title is-4">Display Settings</p>
+                        <p>Color the map by: <span><div class="select">
+                            <select id="mapkey">
+                                <option value="0">No Color</option>
+                                <option disabled>──────────</option>
+                                <option value="1">Crime Index</option>
+                                <option value="2">Crime Rate</option>
+                                <option value="3">Climate Security</option>
+                                <option value="4">Severe Weather</option>
+                                <option value="5">County Tax Rate</option>
+                                <option value="6">Voting History</option>
+                                <option value="7">Population Density</option>
+                            </select>
+                        </div>
+                            </span>
+                        </p>
+                        <br>
+                        <p class="title is-4">What's Important?</p>
                             A rating of <b>1</b> means the issue is of <span class="tag is-success is-light">Low Concern</span> to you<br>
                             A rating of <b>5</b> means the issue is of <span class="tag is-danger is-light">High Concern</span> to you<br><br>
                         <table class="table is-hoverable">
@@ -177,7 +204,7 @@ dropdown.addEventListener('click', function(event) {
                                     <td align="center"><p class="heading">Crime Rate</p></td>
                                     <td align="center"><input type="radio" name="crime" value="1"></td>
                                     <td align="center"><input type="radio" name="crime" value="2"></td>
-                                    <td align="center"><input type="radio" name="crime" value="3"></td>
+                                    <td align="center"><input type="radio" name="crime" value="3" checked="checked"></td>
                                     <td align="center"><input type="radio" name="crime" value="4"></td>
                                     <td align="center"><input type="radio" name="crime" value="5"></td>
                                 </tr>
@@ -185,7 +212,7 @@ dropdown.addEventListener('click', function(event) {
                                     <td align="center"><p class="heading">Climate Security</p></td>
                                     <td align="center"><input type="radio" name="climate" value="1"></td>
                                     <td align="center"><input type="radio" name="climate" value="2"></td>
-                                    <td align="center"><input type="radio" name="climate" value="3"></td>
+                                    <td align="center"><input type="radio" name="climate" value="3" checked="checked"></td>
                                     <td align="center"><input type="radio" name="climate" value="4"></td>
                                     <td align="center"><input type="radio" name="climate" value="5"></td>
                                 </tr>
@@ -193,7 +220,7 @@ dropdown.addEventListener('click', function(event) {
                                     <td align="center"><p class="heading">Severe Weather</p></td>
                                     <td align="center"><input type="radio" name="weather" value="1"></td>
                                     <td align="center"><input type="radio" name="weather" value="2"></td>
-                                    <td align="center"><input type="radio" name="weather" value="3"></td>
+                                    <td align="center"><input type="radio" name="weather" value="3" checked="checked"></td>
                                     <td align="center"><input type="radio" name="weather" value="4"></td>
                                     <td align="center"><input type="radio" name="weather" value="5"></td>
                                 </tr>
@@ -201,7 +228,7 @@ dropdown.addEventListener('click', function(event) {
                                     <td align="center"><p class="heading">Property Value</p></td>
                                     <td align="center"><input type="radio" name="property" value="1"></td>
                                     <td align="center"><input type="radio" name="property" value="2"></td>
-                                    <td align="center"><input type="radio" name="property" value="3"></td>
+                                    <td align="center"><input type="radio" name="property" value="3" checked="checked"></td>
                                     <td align="center"><input type="radio" name="property" value="4"></td>
                                     <td align="center"><input type="radio" name="property" value="5"></td>
                                 </tr>
@@ -209,7 +236,7 @@ dropdown.addEventListener('click', function(event) {
                                     <td align="center"><p class="heading">Tax Rate</p></td>
                                     <td align="center"><input type="radio" name="tax" value="1"></td>
                                     <td align="center"><input type="radio" name="tax" value="2"></td>
-                                    <td align="center"><input type="radio" name="tax" value="3"></td>
+                                    <td align="center"><input type="radio" name="tax" value="3" checked="checked"></td>
                                     <td align="center"><input type="radio" name="tax" value="4"></td>
                                     <td align="center"><input type="radio" name="tax" value="5"></td>
                                 </tr>
@@ -217,7 +244,7 @@ dropdown.addEventListener('click', function(event) {
                                     <td align="center"><p class="heading">Public Education</td>
                                     <td align="center"><input type="radio" name="education" value="1"></td>
                                     <td align="center"><input type="radio" name="education" value="2"></td>
-                                    <td align="center"><input type="radio" name="education" value="3"></td>
+                                    <td align="center"><input type="radio" name="education" value="3" checked="checked"></td>
                                     <td align="center"><input type="radio" name="education" value="4"></td>
                                     <td align="center"><input type="radio" name="education" value="5"></td>
                                 </tr>
@@ -225,77 +252,74 @@ dropdown.addEventListener('click', function(event) {
                         </table>
                     </section>
                     <footer class="modal-card-foot">
-                    <button class="button is-success" id="modal-close">Save</button>
+                    <button class="button is-success" id="hideModal">Save</button>
                     </footer>
                 </div>
             </div>
+            
+            <!-- ANALYSIS TABLE -->
             <section class="section">
                 <div class="container">
                     <div class="box">
-                        <h1 class="title">Analysis</h1>
+                        <h1 class="title">Analysis Table</h1>
                         <p class="subtitle">After you make your first selection, our tool will display the relevant data in the table below.<br>
                             Once you select more, the tool will evaluate which property is best for you based on your preferences.</p>
                         <table class="table is-hoverable">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Location</th>
-      <th><div class="tooltip">Crime Index<span class="tooltiptext">Number of violent crimes committed in this county in 2018, including automobile theft, robbery, arson, and property crime.</span></div></th>
-      <th><abbr title="Won">Weather</abbr></th>
-      <th><abbr title="Drawn">D</abbr></th>
-      <th><abbr title="Lost">L</abbr></th>
-      <th><abbr title="Goals for">GF</abbr></th>
-      <th><abbr title="Goals against">GA</abbr></th>
-      <th><abbr title="Goal difference">GD</abbr></th>
-      <th><abbr title="Points">Pts</abbr></th>
-    </tr>
-</thead>
-  <tbody>
-    <tr>
-      <th>1</th>
-        <td>Calvin's Mom's House</td>
-      <td>38</td>
-      <td>23</td>
-      <td>12</td>
-      <td>3</td>
-      <td>68</td>
-      <td>36</td>
-      <td>+32</td>
-      <td>81</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>My Basement</td>
-      <td>38</td>
-      <td>20</td>
-      <td>11</td>
-      <td>7</td>
-      <td>65</td>
-      <td>36</td>
-      <td>+29</td>
-      <td>71</td>
-    </tr>
-  </tbody>
-</table>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Location</th>
+                                    <th><div class="tooltip">Crime Index<span class="tooltiptext">Number of violent crimes committed in this county in 2018, including automobile theft, robbery, arson, and property crime.</span></div></th>
+                                    <th><abbr title="Won">Weather</abbr></th>
+                                    <th><abbr title="Drawn">D</abbr></th>
+                                    <th><abbr title="Lost">L</abbr></th>
+                                    <th><abbr title="Goals for">GF</abbr></th>
+                                    <th><abbr title="Goals against">GA</abbr></th>
+                                    <th><abbr title="Goal difference">GD</abbr></th>
+                                    <th><abbr title="Points">Pts</abbr></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>1</th>
+                                    <td>Calvin's Mom's House</td>
+                                    <td>38</td>
+                                    <td>23</td>
+                                    <td>12</td>
+                                    <td>3</td>
+                                    <td>68</td>
+                                    <td>36</td>
+                                    <td>+32</td>
+                                    <td>81</td>
+                                </tr>
+                                <tr>
+                                    <th>2</th>
+                                    <td>My Basement</td>
+                                    <td>38</td>
+                                    <td>20</td>
+                                    <td>11</td>
+                                    <td>7</td>
+                                    <td>65</td>
+                                    <td>36</td>
+                                    <td>+29</td>
+                                    <td>71</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-            
-            
             </section>
-        
-        
-		
-		
-		
-<footer class="footer">
-  <div class="content has-text-centered">
-    <p>
-      <strong>Space Team</strong> @ HackOHI/O 2020: <a href="https://github.com/ZachBoyce1">Zach Boyce</a>, <a href="https://github.com/jonathonbrady">Jonathon Brady</a>, <a href="https://github.com/HobbesG">Calvin Gunawan</a>, <a href="https://github.com/lukeshotgun">Luke Wingert</a><br>The source code is licensed
-      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-      is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-    </p>
-  </div>
-</footer>
+            
+            <!-- SITE FOOTER-->
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>
+                        <strong>Space Team</strong> @ HackOHI/O 2020: <a href="https://github.com/ZachBoyce1">Zach Boyce</a>, <a href="https://github.com/jonathonbrady">Jonathon Brady</a>, <a href="https://github.com/HobbesG">Calvin Gunawan</a>, <a href="https://github.com/lukeshotgun">Luke Wingert</a><br>The source code is licensed
+                        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+                        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+                    </p>
+                </div>
+            </footer>
         </center>
 	</body>
 </html>
