@@ -64,7 +64,7 @@ info.update = function (property) {
 
     if(map.getZoom() > 6){
     this._div.innerHTML = '<h4>Information</h4>' +  (property ?
-        '<b>State:'+ stateNum(parseInt(property.STATE)) + '</b> <br />'+
+        '<b>State: '+ stateNum(parseInt(property.STATE)) + '</b> <br />'+
         '<b> County: ' + property.NAME + '</b><br />' 
         : 'Hover over a county');
     }
