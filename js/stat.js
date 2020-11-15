@@ -53,7 +53,7 @@ function crimeRate(d){
             var robberyDiff = ohCrime2019.countiesName[c].crime.robbery - ohCrime2018.countiesName[c].crime.robbery
             var burglaryDiff = ohCrime2019.countiesName[c].crime.burglary - ohCrime2018.countiesName[c].crime.burglary
             var larcenyDiff = ohCrime2019.countiesName[c].crime.larcenyTheft - ohCrime2018.countiesName[c].crime.larcenyTheft
-            var stat = (motorTheftDiff + propertyCrimeDiff + robberyDiff + burglaryDiff + larcenyDiff)/50
+            var stat = (motorTheftDiff + propertyCrimeDiff + robberyDiff + burglaryDiff + larcenyDiff)
         }
         if(stat > 0){
             stat = 100
