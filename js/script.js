@@ -89,7 +89,7 @@ function highlightFeature(e) {
         dashArray: '',
         fillOpacity: 0.7
     });
-
+    
     if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
         layer.bringToFront();
     }
@@ -129,6 +129,16 @@ var initialGeoJSON = L.geoJSON(mapZoom(), {
 }).addTo(map);
 
 // Change geoJSON based on zoom
+if(ID == 8){
+    map.on('zoomend', function(e){
+        map.removeLayer(geoJSON);
+        map.removeLayer(initialGeoJSON);
+    
+       geoJSON = L.geoJSON(schoolDistricts).addTo(map);
+    
+    });
+}
+else{
 map.on('zoomend', function(e){
     map.removeLayer(geoJSON);
     map.removeLayer(initialGeoJSON);
@@ -140,6 +150,7 @@ map.on('zoomend', function(e){
     }).addTo(map);
 
 });
+}
 
 var geocodeService = L.esri.Geocoding.geocodeService();
 var marker;
