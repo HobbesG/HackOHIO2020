@@ -1,6 +1,6 @@
 
 
-function script(){
+function script(ID){
     
     var map = L.map('mapid').setView([39.9612, -82.9988], 8);
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
@@ -39,7 +39,7 @@ map.removeLayer(geoJSON);
     
 function getColor(d) {
 
-    var type = statType(1)
+    var type = statType(ID)
     var stat = testStat(d.NAME,type)
 
     if(d.STATE != 39){
