@@ -39,16 +39,21 @@
                     var array = address.split(",");
 
                     
-
+                   
+                   
                     var link = 'https://www.yaddress.net/api/Address?AddressLine1='+ array[0] +'&AddressLine2=' + array[1]+ ','+ array[2] + '&UserKey=';
                     var fixedLink = link.split(' ').join('+');
                     window.alert(fixedLink);
-                    $.get(fixLink,null,countyGet(data,status,xhr),"json");
+                  $.get(fixedLink)
+                        .done((data)=> console.log(data))
+                        .fail((error)=> console.error(error))
+                        .always(()=> console.log('Done'));
                     
                     $('html, body').animate({ scrollTop: $("#analysisScroll").offset().top}, 1000);
                     var row = "<tr><td><b>" + ($("#analysis").find("tr").length - 1) + "<b></td>";
                     row += "<td>" + array[0] + "</td>";
                     $('#analysis tr:last').after(row);
+                        
                 });
                 
                 var dropdown = document.querySelector('.dropdown');
