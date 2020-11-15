@@ -142,13 +142,17 @@ map.on('zoomend', function(e){
 });
 
 var geocodeService = L.esri.Geocoding.geocodeService();
+var marker;
 
   map.on('click', function (e) {
     geocodeService.reverse().latlng(e.latlng).run(function (error, result) {
       if (error || map.getZoom() < 8) {
         return;
       }
-      L.marker(result.latlng).addTo(map).bindPopup(result.address.Match_addr).openPopup();
+      if(marker){
+          map.removeLayer(marker)
+      }
+      marker = L.marker(result.latlng).addTo(map).bindPopup(result.address.Match_addr).openPopup();
         document.getElementById("address").innerHTML = result.address.Match_addr;
     });
   });
