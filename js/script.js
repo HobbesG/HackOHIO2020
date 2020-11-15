@@ -145,7 +145,7 @@ var geocodeService = L.esri.Geocoding.geocodeService();
 
   map.on('click', function (e) {
     geocodeService.reverse().latlng(e.latlng).run(function (error, result) {
-      if (error) {
+      if (error || map.getZoom() < 8) {
         return;
       }
 
