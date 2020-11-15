@@ -70,7 +70,7 @@ info.update = function (property) {
     }
     else{
         this._div.innerHTML = '<h4>Information</h4>' +  (property ?
-            '<b>State:'+ property.STATE + '</b> <br />'
+            '<b>State:'+ stateNum(parseInt(property.STATE)) + '</b> <br />'
             : 'Hover over a state');
     }
 };
